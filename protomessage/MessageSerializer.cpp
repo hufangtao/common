@@ -21,12 +21,12 @@ bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEn
 
     for(int i=0; i< byCmdEnum->value_count(); i++)
     {
-        const EnumValueDescriptor* item = byCmdEnum->value(i);
+        const google::protobuf::EnumValueDescriptor* item = byCmdEnum->value(i);
     }
     return true;
 }
 
-bool MessageSerializer::Register(unsigned char byCmd, unsigned char byParam, const Descriptor* typeDescriptor)
+bool MessageSerializer::Register(unsigned char byCmd, unsigned char byParam, const google::protobuf::Descriptor* typeDescriptor)
 {
     if(typeDescriptor == NULL)
     {

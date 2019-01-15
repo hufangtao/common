@@ -5,7 +5,7 @@ MessageSerializer::MessageSerializer()
     memset(m_unserializeTable, 0, sizeof(m_unserializeTable));
 }
 
-const google::protobuf::Message* MessageSerializer::getMessageByCmdParam(unsigned char byCmd, unsigned char byParam)
+const google::protobuf::Message *MessageSerializer::getMessageByCmdParam(unsigned char byCmd, unsigned char byParam)
 {
     unsigned int uMsgID = (byCmd << 8) + byParam;
     return m_unserializeTable[uMsgID];
@@ -13,24 +13,48 @@ const google::protobuf::Message* MessageSerializer::getMessageByCmdParam(unsigne
 
 bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEnum, const std::string ns)
 {
-    if(byCmdEnum == NULL)
+    if (byCmdEnum == NULL)
     {
         ERROR("MessageSerializer::Register inset err");
         return false;
     }
 
-    for(int i=0; i< byCmdEnum->value_count(); i++)
+    for (int i = 0; i < byCmdEnum->value_count(); i++)
     {
-        const google::protobuf::EnumValueDescriptor* item = byCmdEnum->value(i);
+        const google::protobuf::EnumValueDescriptor *item = byCmdEnum->value(i);
+        const int c = item->number();
+        std::size_t found = item->name().find_last_of("_");
+        std::string cmdname = item->name().substr(found + 1);
+        const std::string paramtype = ns + "." + cmdname + ".Param";
+        INFO("MessageSerializer::Register byCmdEnum:", c, paramtype.c_str(), item->name().c_str());
+
+        const google::protobuf::EnumDescriptor *byParamEnum = google::protobuf::DescriptorPool::generated_pool()->FindEnumTypeByName(paramtype);
+        if (NULL == byParamEnum)
+        {
+            ERROR("MessageSerializer::Register err:", c, paramtype.c_str(), item->name().c_str());
+            return false;
+        }
+
+        for(int i=0;i<byParamEnum->value_count();i++)
+        {
+
+            const google::protobuf::EnumValueDescriptor *item = byCmdEnum->value(i);
+            if(c>0&&c<200&&item->name().find(cmdname.c_str()) == std::string::npos)
+            {
+                
+            }
+
+        }
+
     }
     return true;
 }
 
-bool MessageSerializer::Register(unsigned char byCmd, unsigned char byParam, const google::protobuf::Descriptor* typeDescriptor)
+bool MessageSerializer::Register(unsigned char byCmd, unsigned char byParam, const google::protobuf::Descriptor *typeDescriptor)
 {
-    if(typeDescriptor == NULL)
+    if (typeDescriptor == NULL)
     {
-        printError("MessageSerializer::Register err");
+        ERROR("MessageSerializer::Register err");
         return false;
     }
     return true;

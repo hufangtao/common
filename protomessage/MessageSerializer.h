@@ -3,6 +3,7 @@
 #pragma once
 
 #include <google/protobuf/stubs/common.h>
+#include <google/protobuf/message.h>
 #include "utils/common.h"
 
 class MessageSerializer

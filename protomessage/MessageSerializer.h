@@ -32,7 +32,7 @@ class MessageSerializer
      * @param byCmd 主协议号 byParam 子协议号
      * @return google::protobuf::Message.
     */
-    google::protobuf::Message* getMessageByCmdParam(unsigned char byCmd, unsigned char byParam);
+    const google::protobuf::Message* getMessageByCmdParam(unsigned char byCmd, unsigned char byParam);
 
 };
 

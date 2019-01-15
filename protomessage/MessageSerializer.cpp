@@ -5,7 +5,7 @@ MessageSerializer::MessageSerializer()
     memset(m_unserializeTable, 0, sizeof(m_unserializeTable));
 }
 
-google::protobuf::Message* MessageSerializer::getMessageByCmdParam(unsigned char byCmd, unsigned char byParam)
+const google::protobuf::Message* MessageSerializer::getMessageByCmdParam(unsigned char byCmd, unsigned char byParam)
 {
     unsigned int uMsgID = (byCmd << 8) + byParam;
     return m_unserializeTable[uMsgID];

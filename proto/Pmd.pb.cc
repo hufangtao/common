@@ -50,22 +50,21 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\tPmd.proto\022\007PlatPmd\032\013Types.proto*\336\002\n\013Pl"
-      "atCommand\022\027\n\023PlatCommand_NullPmd\020\000\022\026\n\022Pl"
-      "atCommand_AccPmd\020\001\022\031\n\025PlatCommand_Player"
-      "Pmd\020\002\022\027\n\023PlatCommand_RoomPmd\020\003\022\033\n\027PlatCo"
-      "mmand_ActivityPmd\020\004\022\027\n\023PlatCommand_ChatP"
-      "md\020\005\022\030\n\024PlatCommand_GoodsPmd\020\006\022\027\n\023PlatCo"
-      "mmand_TaskPmd\020\007\022\030\n\024PlatCommand_AwardPmd\020"
-      "\010\022\032\n\026PlatCommand_PaymentPmd\020\t\022\027\n\023PlatCom"
-      "mand_RankPmd\020\n\022\027\n\023PlatCommand_PlayPmd\020\013\022"
-      "\031\n\025PlatCommand_SignInPmd\020\014b\006proto3"
+      "\n\tPmd.proto\022\007PlatPmd*\336\002\n\013PlatCommand\022\027\n\023"
+      "PlatCommand_NullPmd\020\000\022\026\n\022PlatCommand_Acc"
+      "Pmd\020\001\022\031\n\025PlatCommand_PlayerPmd\020\002\022\027\n\023Plat"
+      "Command_RoomPmd\020\003\022\033\n\027PlatCommand_Activit"
+      "yPmd\020\004\022\027\n\023PlatCommand_ChatPmd\020\005\022\030\n\024PlatC"
+      "ommand_GoodsPmd\020\006\022\027\n\023PlatCommand_TaskPmd"
+      "\020\007\022\030\n\024PlatCommand_AwardPmd\020\010\022\032\n\026PlatComm"
+      "and_PaymentPmd\020\t\022\027\n\023PlatCommand_RankPmd\020"
+      "\n\022\027\n\023PlatCommand_PlayPmd\020\013\022\031\n\025PlatComman"
+      "d_SignInPmd\020\014b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 394);
+      descriptor, 381);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "Pmd.proto", &protobuf_RegisterTypes);
-  ::protobuf_Types_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

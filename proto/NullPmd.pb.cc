@@ -148,21 +148,19 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\rNullPmd.proto\022\007PlatPmd\032\013Types.proto\"E\n"
-      "\007NullPmd\":\n\005Param\022\031\n\025NetPackageNullPmd_C"
-      "2S\020\000\022\026\n\022NetTickNullPmd_S2C\020\001\"\221\001\n\025NetPack"
-      "ageNullPmd_C2S\022\r\n\005byCmd\030\001 \001(\005\022\017\n\007byParam"
-      "\030\002 \001(\005\022\013\n\003seq\030\003 \001(\005\022\013\n\003fid\030\004 \001(\003\022\014\n\004data"
-      "\030\005 \001(\014\022\021\n\tprototype\030\006 \001(\003\022\017\n\007bitmask\030\007 \001"
-      "(\005\022\014\n\004time\030\010 \001(\005\"8\n\021NetTickNullPmd_SC\022\023\n"
-      "\013requesttime\030\001 \001(\005\022\016\n\006mytime\030\002 \001(\005b\006prot"
-      "o3"
+      "\n\rNullPmd.proto\022\007PlatPmd\"E\n\007NullPmd\":\n\005P"
+      "aram\022\031\n\025NetPackageNullPmd_C2S\020\000\022\026\n\022NetTi"
+      "ckNullPmd_S2C\020\001\"\221\001\n\025NetPackageNullPmd_C2"
+      "S\022\r\n\005byCmd\030\001 \001(\005\022\017\n\007byParam\030\002 \001(\005\022\013\n\003seq"
+      "\030\003 \001(\005\022\013\n\003fid\030\004 \001(\003\022\014\n\004data\030\005 \001(\014\022\021\n\tpro"
+      "totype\030\006 \001(\003\022\017\n\007bitmask\030\007 \001(\005\022\014\n\004time\030\010 "
+      "\001(\005\"8\n\021NetTickNullPmd_SC\022\023\n\013requesttime\030"
+      "\001 \001(\005\022\016\n\006mytime\030\002 \001(\005b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 322);
+      descriptor, 309);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "NullPmd.proto", &protobuf_RegisterTypes);
-  ::protobuf_Types_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {

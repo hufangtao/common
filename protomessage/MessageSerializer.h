@@ -2,6 +2,7 @@
 #define MESSAGESERIALIZER_H
 #pragma once
 
+#include <google/protobuf/stubs/common.h>
 #include "utils/common.h"
 
 class MessageSerializer

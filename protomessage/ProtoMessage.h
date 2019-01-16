@@ -1,6 +1,9 @@
 #ifndef PROTOMESSAGE_H
 #define PROTOMESSAGE_H
 
+#include <cstddef>
+#include <string>
+
 class ProtoMessage
 {
   public:

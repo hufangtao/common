@@ -2,9 +2,10 @@
 #define MESSAGESERIALIZER_H
 #pragma once
 
-#include <google/protobuf/stubs/common.h>
-#include <google/protobuf/message.h>
 #include "utils/common.h"
+#include "common/proto/Pmd.pb.h"
+#include "common/proto/NullPmd.pb.h"
+#include "common/proto/AccPmd.pb.h"
 
 class MessageSerializer
 {

@@ -2,7 +2,9 @@
 #define PROTOMESSAGE_H
 
 #include <cstddef>
-#include <string>
+#include <cstring>
+#include <cstdio>
+#include <cstdlib>
 
 class ProtoMessage
 {

@@ -149,21 +149,21 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\014AccPmd.proto\022\007PlatPmd\"5\n\006AccPmd\"+\n\005Par"
-      "am\022\020\n\014LoginPmd_C2S\020\000\022\020\n\014LoginPmd_S2C\020\001\"\204"
-      "\001\n\014LoginPmd_C2S\022\020\n\010platform\030\001 \001(\t\022\027\n\017gam"
-      "e_account_id\030\002 \001(\t\022\031\n\021game_account_sign\030"
-      "\003 \001(\t\022\027\n\017channel_open_id\030\004 \001(\t\022\025\n\rchanne"
-      "l_param\030\005 \001(\t\"\215\001\n\014LoginPmd_S2C\022\014\n\004code\030\001"
-      " \001(\005\022\n\n\002id\030\002 \001(\005\022\027\n\017channel_open_id\030\003 \001("
-      "\t\022\027\n\017game_account_id\030\004 \001(\t\022\031\n\021game_accou"
-      "nt_sign\030\005 \001(\t\022\026\n\016game_login_key\030\006 \001(\t*N\n"
-      "\005Error\022\013\n\007LoginOk\020\000\022\022\n\016TokenFindError\020\001\022"
-      "\022\n\016TokenDiffError\020\002\022\020\n\014VersionError\020\003b\006p"
-      "roto3"
+      "\n\014AccPmd.proto\022\007PlatPmd\";\n\006AccPmd\"1\n\005Par"
+      "am\022\023\n\017LoginAccPmd_C2S\020\000\022\023\n\017LoginAccPmd_S"
+      "2C\020\001\"\204\001\n\014LoginPmd_C2S\022\020\n\010platform\030\001 \001(\t\022"
+      "\027\n\017game_account_id\030\002 \001(\t\022\031\n\021game_account"
+      "_sign\030\003 \001(\t\022\027\n\017channel_open_id\030\004 \001(\t\022\025\n\r"
+      "channel_param\030\005 \001(\t\"\215\001\n\014LoginPmd_S2C\022\014\n\004"
+      "code\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\027\n\017channel_open_i"
+      "d\030\003 \001(\t\022\027\n\017game_account_id\030\004 \001(\t\022\031\n\021game"
+      "_account_sign\030\005 \001(\t\022\026\n\016game_login_key\030\006 "
+      "\001(\t*N\n\005Error\022\013\n\007LoginOk\020\000\022\022\n\016TokenFindEr"
+      "ror\020\001\022\022\n\016TokenDiffError\020\002\022\020\n\014VersionErro"
+      "r\020\003b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 445);
+      descriptor, 451);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "AccPmd.proto", &protobuf_RegisterTypes);
 }
@@ -195,8 +195,8 @@ bool AccPmd_Param_IsValid(int value) {
 }
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const AccPmd_Param AccPmd::LoginPmd_C2S;
-const AccPmd_Param AccPmd::LoginPmd_S2C;
+const AccPmd_Param AccPmd::LoginAccPmd_C2S;
+const AccPmd_Param AccPmd::LoginAccPmd_S2C;
 const AccPmd_Param AccPmd::Param_MIN;
 const AccPmd_Param AccPmd::Param_MAX;
 const int AccPmd::Param_ARRAYSIZE;

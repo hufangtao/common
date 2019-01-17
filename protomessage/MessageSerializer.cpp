@@ -47,7 +47,7 @@ bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEn
             }
 
             const int t = item->number();
-            printInfo("MessageSerializer::Register byParamEnum:", "[", c, t, "]", byParamEnum->full_name().c_str(), item->name().c_str());
+            INFO("MessageSerializer::Register byParamEnum:", "[", c, t, "]", byParamEnum->full_name().c_str(), item->name().c_str());
 
             const google::protobuf::Descriptor *message = google::protobuf::DescriptorPool::generated_pool()->FindMessageTypeByName(ns + "." + item->name());
             if (NULL == message)

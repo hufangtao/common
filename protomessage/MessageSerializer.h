@@ -6,6 +6,7 @@
 #include "common/proto/Pmd.pb.h"
 #include "common/proto/NullPmd.pb.h"
 #include "common/proto/AccPmd.pb.h"
+#include "common/proto/PlayerPmd.pb.h"
 
 class MessageSerializer
 {

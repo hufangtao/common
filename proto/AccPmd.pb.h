@@ -67,14 +67,14 @@ template<> ::PlatPmd::LoginPmd_S2C* Arena::CreateMaybeMessage<::PlatPmd::LoginPm
 namespace PlatPmd {
 
 enum AccPmd_Param {
-  AccPmd_Param_LoginPmd_C2S = 0,
-  AccPmd_Param_LoginPmd_S2C = 1,
+  AccPmd_Param_LoginAccPmd_C2S = 0,
+  AccPmd_Param_LoginAccPmd_S2C = 1,
   AccPmd_Param_AccPmd_Param_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   AccPmd_Param_AccPmd_Param_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool AccPmd_Param_IsValid(int value);
-const AccPmd_Param AccPmd_Param_Param_MIN = AccPmd_Param_LoginPmd_C2S;
-const AccPmd_Param AccPmd_Param_Param_MAX = AccPmd_Param_LoginPmd_S2C;
+const AccPmd_Param AccPmd_Param_Param_MIN = AccPmd_Param_LoginAccPmd_C2S;
+const AccPmd_Param AccPmd_Param_Param_MAX = AccPmd_Param_LoginAccPmd_S2C;
 const int AccPmd_Param_Param_ARRAYSIZE = AccPmd_Param_Param_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* AccPmd_Param_descriptor();
@@ -198,10 +198,10 @@ class AccPmd : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   // nested types ----------------------------------------------------
 
   typedef AccPmd_Param Param;
-  static const Param LoginPmd_C2S =
-    AccPmd_Param_LoginPmd_C2S;
-  static const Param LoginPmd_S2C =
-    AccPmd_Param_LoginPmd_S2C;
+  static const Param LoginAccPmd_C2S =
+    AccPmd_Param_LoginAccPmd_C2S;
+  static const Param LoginAccPmd_S2C =
+    AccPmd_Param_LoginAccPmd_S2C;
   static inline bool Param_IsValid(int value) {
     return AccPmd_Param_IsValid(value);
   }

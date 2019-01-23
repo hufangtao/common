@@ -2,7 +2,7 @@
 #define MESSAGESERIALIZER_H
 #pragma once
 
-#include "utils/common.h"
+#include "serverutils/common.h"
 #include "common/proto/Pmd.pb.h"
 #include "common/proto/NullPmd.pb.h"
 #include "common/proto/AccPmd.pb.h"

@@ -1,16 +1,16 @@
-#ifndef UTILS_H
-#define UTILS_H
+#ifndef PROTOUTILS_H
+#define PROTOUTILS_H
 
 #include "common/protomessage/MessageSerializer.h"
 
-class Utils
+class ProtoUtils
 {
 public:
     static MessageSerializer* msgDecode;
 
 public:
-    Utils(/* args */);
-    ~Utils();
+    ProtoUtils(/* args */);
+    ~ProtoUtils();
 };
 
 #endif

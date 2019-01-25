@@ -29,7 +29,8 @@ bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEn
         const std::string paramtype = ns + "." + cmdname + ".Param";
         INFO("MessageSerializer::Register byCmdEnum:", c, paramtype.c_str(), item->name().c_str());
 
-        const google::protobuf::EnumDescriptor *byParamEnum = google::protobuf::DescriptorPool::generated_pool()->FindEnumTypeByName(paramtype);
+        const google::protobuf::DescriptorPool *descriptorPool = google::protobuf::DescriptorPool::generated_pool();
+        const google::protobuf::EnumDescriptor *byParamEnum = descriptorPool->FindEnumTypeByName(paramtype);
         if (NULL == byParamEnum)
         {
             ERROR("MessageSerializer::Register err:", c, paramtype.c_str(), item->name().c_str());

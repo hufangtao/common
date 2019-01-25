@@ -3,6 +3,7 @@
 #pragma once
 
 #include "serverutils/common.h"
+#include <google/protobuf/descriptor.h>
 #include "common/proto/Pmd.pb.h"
 #include "common/proto/NullPmd.pb.h"
 #include "common/proto/AccPmd.pb.h"

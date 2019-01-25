@@ -12,6 +12,7 @@ const google::protobuf::Message *MessageSerializer::getMessageByCmdParam(unsigne
     return m_unserializeTable[uMsgID];
 }
 
+
 bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEnum, const std::string ns)
 {
     if (byCmdEnum == NULL)

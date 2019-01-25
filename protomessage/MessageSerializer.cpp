@@ -49,18 +49,18 @@ bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEn
             }
 
             const int t = item->number();
-            INFO("MessageSerializer::Register byParamEnum:", "[", c, t, "]", byParamEnum->full_name().c_str(), item->name().c_str());
+            INFO("MessageSerializer::Register byParamEnum:", "[", c, ",", t, "]", byParamEnum->full_name().c_str(), ",", item->name().c_str());
 
             const google::protobuf::Descriptor *message = google::protobuf::DescriptorPool::generated_pool()->FindMessageTypeByName(ns + "." + item->name());
             if (NULL == message)
             {
-                ERROR("MessageSerializer::Register find err:[", c, t, "]", byParamEnum->full_name().c_str(), (ns + "." + item->name()).c_str());
+                ERROR("MessageSerializer::Register find err:[", c, ", ", t, "]  ", byParamEnum->full_name().c_str(),", ", (ns + "." + item->name()).c_str());
                 return false;
             }
 
             if (Register(c, t, message) == false)
             {
-                ERROR("MessageSerializer::Register insert err:", "[", c, t, "]", byParamEnum->full_name().c_str());
+                ERROR("MessageSerializer::Register insert err:", "[", c, ", ", t, "]  ", byParamEnum->full_name().c_str());
                 return false;
             }
         }

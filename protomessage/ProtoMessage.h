@@ -5,6 +5,8 @@
 #include <cstring>
 #include <cstdio>
 #include <cstdlib>
+#include <google/protobuf/Message.h>
+#include <google/protobuf/Descriptor.h>
 
 class ProtoMessage
 {
@@ -24,7 +26,7 @@ class ProtoMessage
     int param_;
 
   public:
-    ProtoMessage(/* args */);
+    ProtoMessage(google::protobuf::Message message);
     ~ProtoMessage();
 
     const char *data() const;

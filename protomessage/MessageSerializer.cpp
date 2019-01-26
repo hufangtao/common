@@ -41,20 +41,20 @@ bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEn
         for (int i = 0; i < byParamEnum->value_count(); i++)
         {
 
-            const google::protobuf::EnumValueDescriptor *item = byCmdEnum->value(i);
-            if (c > 0 && c < 200 && item->name().find(cmdname.c_str()) == std::string::npos)
+            const google::protobuf::EnumValueDescriptor *paramItem = byParamEnum->value(i);
+            if (c > 0 && c < 200 && paramItem->name().find(cmdname.c_str()) == std::string::npos)
             {
-                ERROR("MessageSerializer::Register name err:", c, cmdname.c_str(), item->name().c_str(), "需要名字严格匹配规则");
+                ERROR("MessageSerializer::Register name err:", c, cmdname.c_str(), paramItem->name().c_str(), "需要名字严格匹配规则");
                 return false;
             }
 
-            const int t = item->number();
-            INFO("MessageSerializer::Register byParamEnum:", "[", c, ",", t, "]", byParamEnum->full_name().c_str(), ",", item->name().c_str());
+            const int t = paramItem->number();
+            INFO("MessageSerializer::Register byParamEnum:", "[", c, ",", t, "]", byParamEnum->full_name().c_str(), ",", paramItem->name().c_str());
 
-            const google::protobuf::Descriptor *message = google::protobuf::DescriptorPool::generated_pool()->FindMessageTypeByName(ns + "." + item->name());
+            const google::protobuf::Descriptor *message = google::protobuf::DescriptorPool::generated_pool()->FindMessageTypeByName(ns + "." + paramItem->name());
             if (NULL == message)
             {
-                ERROR("MessageSerializer::Register find err:[", c, ", ", t, "]  ", byParamEnum->full_name().c_str(),", ", (ns + "." + item->name()).c_str());
+                ERROR("MessageSerializer::Register find err:[", c, ", ", t, "]  ", byParamEnum->full_name().c_str(),", ", (ns + "." + paramItem->name()).c_str());
                 return false;
             }
 
@@ -88,6 +88,7 @@ bool MessageSerializer::Register(unsigned char byCmd, unsigned char byParam, con
 
 void initParamDescriptor()
 {
+    PlatPmd::PlatCommand_descriptor();
     PlatPmd::NullPmd_Param_descriptor();
     PlatPmd::AccPmd_Param_descriptor();
     PlatPmd::PlayerPmd_Param_descriptor();

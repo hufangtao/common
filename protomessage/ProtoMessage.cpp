@@ -82,7 +82,7 @@ bool ProtoMessage::decode_header()
 void ProtoMessage::encode_header()
 {
     char header[HEADER_LENGTH + 1] = "";
-    std::sprintf(header, "%4d", static_cast<int>(body_length_ + PMD_LENGTH + PARAM_LENGTH));
+    std::sprintf(header, "%4d", static_cast<int>(body_length_));
     std::memcpy(data_, header, HEADER_LENGTH);
     data_[HEADER_LENGTH] = pmd_;
     data_[HEADER_LENGTH + 1] = param_;

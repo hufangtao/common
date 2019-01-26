@@ -25,16 +25,16 @@ class AccPmdDefaultTypeInternal {
   ::google::protobuf::internal::ExplicitlyConstructed<AccPmd>
       _instance;
 } _AccPmd_default_instance_;
-class LoginPmd_C2SDefaultTypeInternal {
+class LoginAccPmd_C2SDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LoginPmd_C2S>
+  ::google::protobuf::internal::ExplicitlyConstructed<LoginAccPmd_C2S>
       _instance;
-} _LoginPmd_C2S_default_instance_;
-class LoginPmd_S2CDefaultTypeInternal {
+} _LoginAccPmd_C2S_default_instance_;
+class LoginAccPmd_S2CDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<LoginPmd_S2C>
+  ::google::protobuf::internal::ExplicitlyConstructed<LoginAccPmd_S2C>
       _instance;
-} _LoginPmd_S2C_default_instance_;
+} _LoginAccPmd_S2C_default_instance_;
 }  // namespace PlatPmd
 namespace protobuf_AccPmd_2eproto {
 static void InitDefaultsAccPmd() {
@@ -51,38 +51,38 @@ static void InitDefaultsAccPmd() {
 ::google::protobuf::internal::SCCInfo<0> scc_info_AccPmd =
     {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsAccPmd}, {}};
 
-static void InitDefaultsLoginPmd_C2S() {
+static void InitDefaultsLoginAccPmd_C2S() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::PlatPmd::_LoginPmd_C2S_default_instance_;
-    new (ptr) ::PlatPmd::LoginPmd_C2S();
+    void* ptr = &::PlatPmd::_LoginAccPmd_C2S_default_instance_;
+    new (ptr) ::PlatPmd::LoginAccPmd_C2S();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PlatPmd::LoginPmd_C2S::InitAsDefaultInstance();
+  ::PlatPmd::LoginAccPmd_C2S::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LoginPmd_C2S =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLoginPmd_C2S}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LoginAccPmd_C2S =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLoginAccPmd_C2S}, {}};
 
-static void InitDefaultsLoginPmd_S2C() {
+static void InitDefaultsLoginAccPmd_S2C() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::PlatPmd::_LoginPmd_S2C_default_instance_;
-    new (ptr) ::PlatPmd::LoginPmd_S2C();
+    void* ptr = &::PlatPmd::_LoginAccPmd_S2C_default_instance_;
+    new (ptr) ::PlatPmd::LoginAccPmd_S2C();
     ::google::protobuf::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::PlatPmd::LoginPmd_S2C::InitAsDefaultInstance();
+  ::PlatPmd::LoginAccPmd_S2C::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_LoginPmd_S2C =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLoginPmd_S2C}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_LoginAccPmd_S2C =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsLoginAccPmd_S2C}, {}};
 
 void InitDefaults() {
   ::google::protobuf::internal::InitSCC(&scc_info_AccPmd.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LoginPmd_C2S.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_LoginPmd_S2C.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LoginAccPmd_C2S.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_LoginAccPmd_S2C.base);
 }
 
 ::google::protobuf::Metadata file_level_metadata[3];
@@ -95,37 +95,37 @@ const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUT
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_C2S, _internal_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_C2S, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_C2S, platform_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_C2S, game_account_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_C2S, game_account_sign_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_C2S, channel_open_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_C2S, channel_param_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_C2S, platform_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_C2S, game_account_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_C2S, game_account_sign_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_C2S, channel_open_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_C2S, channel_param_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_S2C, _internal_metadata_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_S2C, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_S2C, code_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_S2C, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_S2C, channel_open_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_S2C, game_account_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_S2C, game_account_sign_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginPmd_S2C, game_login_key_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_S2C, code_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_S2C, id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_S2C, channel_open_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_S2C, game_account_id_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_S2C, game_account_sign_),
+  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::PlatPmd::LoginAccPmd_S2C, game_login_key_),
 };
 static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::PlatPmd::AccPmd)},
-  { 5, -1, sizeof(::PlatPmd::LoginPmd_C2S)},
-  { 15, -1, sizeof(::PlatPmd::LoginPmd_S2C)},
+  { 5, -1, sizeof(::PlatPmd::LoginAccPmd_C2S)},
+  { 15, -1, sizeof(::PlatPmd::LoginAccPmd_S2C)},
 };
 
 static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::PlatPmd::_AccPmd_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::PlatPmd::_LoginPmd_C2S_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&::PlatPmd::_LoginPmd_S2C_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::PlatPmd::_LoginAccPmd_C2S_default_instance_),
+  reinterpret_cast<const ::google::protobuf::Message*>(&::PlatPmd::_LoginAccPmd_S2C_default_instance_),
 };
 
 void protobuf_AssignDescriptors() {
@@ -151,19 +151,19 @@ void AddDescriptorsImpl() {
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
       "\n\014AccPmd.proto\022\007PlatPmd\";\n\006AccPmd\"1\n\005Par"
       "am\022\023\n\017LoginAccPmd_C2S\020\000\022\023\n\017LoginAccPmd_S"
-      "2C\020\001\"\204\001\n\014LoginPmd_C2S\022\020\n\010platform\030\001 \001(\t\022"
-      "\027\n\017game_account_id\030\002 \001(\t\022\031\n\021game_account"
-      "_sign\030\003 \001(\t\022\027\n\017channel_open_id\030\004 \001(\t\022\025\n\r"
-      "channel_param\030\005 \001(\t\"\215\001\n\014LoginPmd_S2C\022\014\n\004"
-      "code\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\027\n\017channel_open_i"
-      "d\030\003 \001(\t\022\027\n\017game_account_id\030\004 \001(\t\022\031\n\021game"
-      "_account_sign\030\005 \001(\t\022\026\n\016game_login_key\030\006 "
-      "\001(\t*N\n\005Error\022\013\n\007LoginOk\020\000\022\022\n\016TokenFindEr"
-      "ror\020\001\022\022\n\016TokenDiffError\020\002\022\020\n\014VersionErro"
-      "r\020\003b\006proto3"
+      "2C\020\001\"\207\001\n\017LoginAccPmd_C2S\022\020\n\010platform\030\001 \001"
+      "(\t\022\027\n\017game_account_id\030\002 \001(\t\022\031\n\021game_acco"
+      "unt_sign\030\003 \001(\t\022\027\n\017channel_open_id\030\004 \001(\t\022"
+      "\025\n\rchannel_param\030\005 \001(\t\"\220\001\n\017LoginAccPmd_S"
+      "2C\022\014\n\004code\030\001 \001(\005\022\n\n\002id\030\002 \001(\005\022\027\n\017channel_"
+      "open_id\030\003 \001(\t\022\027\n\017game_account_id\030\004 \001(\t\022\031"
+      "\n\021game_account_sign\030\005 \001(\t\022\026\n\016game_login_"
+      "key\030\006 \001(\t*N\n\005Error\022\013\n\007LoginOk\020\000\022\022\n\016Token"
+      "FindError\020\001\022\022\n\016TokenDiffError\020\002\022\020\n\014Versi"
+      "onError\020\003b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 451);
+      descriptor, 457);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "AccPmd.proto", &protobuf_RegisterTypes);
 }
@@ -399,24 +399,24 @@ void AccPmd::InternalSwap(AccPmd* other) {
 
 // ===================================================================
 
-void LoginPmd_C2S::InitAsDefaultInstance() {
+void LoginAccPmd_C2S::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int LoginPmd_C2S::kPlatformFieldNumber;
-const int LoginPmd_C2S::kGameAccountIdFieldNumber;
-const int LoginPmd_C2S::kGameAccountSignFieldNumber;
-const int LoginPmd_C2S::kChannelOpenIdFieldNumber;
-const int LoginPmd_C2S::kChannelParamFieldNumber;
+const int LoginAccPmd_C2S::kPlatformFieldNumber;
+const int LoginAccPmd_C2S::kGameAccountIdFieldNumber;
+const int LoginAccPmd_C2S::kGameAccountSignFieldNumber;
+const int LoginAccPmd_C2S::kChannelOpenIdFieldNumber;
+const int LoginAccPmd_C2S::kChannelParamFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-LoginPmd_C2S::LoginPmd_C2S()
+LoginAccPmd_C2S::LoginAccPmd_C2S()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   ::google::protobuf::internal::InitSCC(
-      &protobuf_AccPmd_2eproto::scc_info_LoginPmd_C2S.base);
+      &protobuf_AccPmd_2eproto::scc_info_LoginAccPmd_C2S.base);
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(constructor:PlatPmd.LoginAccPmd_C2S)
 }
-LoginPmd_C2S::LoginPmd_C2S(const LoginPmd_C2S& from)
+LoginAccPmd_C2S::LoginAccPmd_C2S(const LoginAccPmd_C2S& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -440,10 +440,10 @@ LoginPmd_C2S::LoginPmd_C2S(const LoginPmd_C2S& from)
   if (from.channel_param().size() > 0) {
     channel_param_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.channel_param_);
   }
-  // @@protoc_insertion_point(copy_constructor:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(copy_constructor:PlatPmd.LoginAccPmd_C2S)
 }
 
-void LoginPmd_C2S::SharedCtor() {
+void LoginAccPmd_C2S::SharedCtor() {
   platform_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_sign_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -451,12 +451,12 @@ void LoginPmd_C2S::SharedCtor() {
   channel_param_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
-LoginPmd_C2S::~LoginPmd_C2S() {
-  // @@protoc_insertion_point(destructor:PlatPmd.LoginPmd_C2S)
+LoginAccPmd_C2S::~LoginAccPmd_C2S() {
+  // @@protoc_insertion_point(destructor:PlatPmd.LoginAccPmd_C2S)
   SharedDtor();
 }
 
-void LoginPmd_C2S::SharedDtor() {
+void LoginAccPmd_C2S::SharedDtor() {
   platform_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_sign_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -464,22 +464,22 @@ void LoginPmd_C2S::SharedDtor() {
   channel_param_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
-void LoginPmd_C2S::SetCachedSize(int size) const {
+void LoginAccPmd_C2S::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LoginPmd_C2S::descriptor() {
+const ::google::protobuf::Descriptor* LoginAccPmd_C2S::descriptor() {
   ::protobuf_AccPmd_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_AccPmd_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
-const LoginPmd_C2S& LoginPmd_C2S::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_AccPmd_2eproto::scc_info_LoginPmd_C2S.base);
+const LoginAccPmd_C2S& LoginAccPmd_C2S::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_AccPmd_2eproto::scc_info_LoginAccPmd_C2S.base);
   return *internal_default_instance();
 }
 
 
-void LoginPmd_C2S::Clear() {
-// @@protoc_insertion_point(message_clear_start:PlatPmd.LoginPmd_C2S)
+void LoginAccPmd_C2S::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlatPmd.LoginAccPmd_C2S)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -492,11 +492,11 @@ void LoginPmd_C2S::Clear() {
   _internal_metadata_.Clear();
 }
 
-bool LoginPmd_C2S::MergePartialFromCodedStream(
+bool LoginAccPmd_C2S::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(parse_start:PlatPmd.LoginAccPmd_C2S)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -511,7 +511,7 @@ bool LoginPmd_C2S::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->platform().data(), static_cast<int>(this->platform().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_C2S.platform"));
+            "PlatPmd.LoginAccPmd_C2S.platform"));
         } else {
           goto handle_unusual;
         }
@@ -527,7 +527,7 @@ bool LoginPmd_C2S::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->game_account_id().data(), static_cast<int>(this->game_account_id().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_C2S.game_account_id"));
+            "PlatPmd.LoginAccPmd_C2S.game_account_id"));
         } else {
           goto handle_unusual;
         }
@@ -543,7 +543,7 @@ bool LoginPmd_C2S::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->game_account_sign().data(), static_cast<int>(this->game_account_sign().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_C2S.game_account_sign"));
+            "PlatPmd.LoginAccPmd_C2S.game_account_sign"));
         } else {
           goto handle_unusual;
         }
@@ -559,7 +559,7 @@ bool LoginPmd_C2S::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->channel_open_id().data(), static_cast<int>(this->channel_open_id().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_C2S.channel_open_id"));
+            "PlatPmd.LoginAccPmd_C2S.channel_open_id"));
         } else {
           goto handle_unusual;
         }
@@ -575,7 +575,7 @@ bool LoginPmd_C2S::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->channel_param().data(), static_cast<int>(this->channel_param().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_C2S.channel_param"));
+            "PlatPmd.LoginAccPmd_C2S.channel_param"));
         } else {
           goto handle_unusual;
         }
@@ -594,17 +594,17 @@ bool LoginPmd_C2S::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(parse_success:PlatPmd.LoginAccPmd_C2S)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(parse_failure:PlatPmd.LoginAccPmd_C2S)
   return false;
 #undef DO_
 }
 
-void LoginPmd_C2S::SerializeWithCachedSizes(
+void LoginAccPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(serialize_start:PlatPmd.LoginAccPmd_C2S)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -613,7 +613,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->platform().data(), static_cast<int>(this->platform().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.platform");
+      "PlatPmd.LoginAccPmd_C2S.platform");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->platform(), output);
   }
@@ -623,7 +623,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_id().data(), static_cast<int>(this->game_account_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.game_account_id");
+      "PlatPmd.LoginAccPmd_C2S.game_account_id");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->game_account_id(), output);
   }
@@ -633,7 +633,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_sign().data(), static_cast<int>(this->game_account_sign().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.game_account_sign");
+      "PlatPmd.LoginAccPmd_C2S.game_account_sign");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->game_account_sign(), output);
   }
@@ -643,7 +643,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->channel_open_id().data(), static_cast<int>(this->channel_open_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.channel_open_id");
+      "PlatPmd.LoginAccPmd_C2S.channel_open_id");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->channel_open_id(), output);
   }
@@ -653,7 +653,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->channel_param().data(), static_cast<int>(this->channel_param().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.channel_param");
+      "PlatPmd.LoginAccPmd_C2S.channel_param");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->channel_param(), output);
   }
@@ -662,13 +662,13 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
-  // @@protoc_insertion_point(serialize_end:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(serialize_end:PlatPmd.LoginAccPmd_C2S)
 }
 
-::google::protobuf::uint8* LoginPmd_C2S::InternalSerializeWithCachedSizesToArray(
+::google::protobuf::uint8* LoginAccPmd_C2S::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(serialize_to_array_start:PlatPmd.LoginAccPmd_C2S)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -677,7 +677,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->platform().data(), static_cast<int>(this->platform().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.platform");
+      "PlatPmd.LoginAccPmd_C2S.platform");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->platform(), target);
@@ -688,7 +688,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_id().data(), static_cast<int>(this->game_account_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.game_account_id");
+      "PlatPmd.LoginAccPmd_C2S.game_account_id");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->game_account_id(), target);
@@ -699,7 +699,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_sign().data(), static_cast<int>(this->game_account_sign().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.game_account_sign");
+      "PlatPmd.LoginAccPmd_C2S.game_account_sign");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->game_account_sign(), target);
@@ -710,7 +710,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->channel_open_id().data(), static_cast<int>(this->channel_open_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.channel_open_id");
+      "PlatPmd.LoginAccPmd_C2S.channel_open_id");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         4, this->channel_open_id(), target);
@@ -721,7 +721,7 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->channel_param().data(), static_cast<int>(this->channel_param().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_C2S.channel_param");
+      "PlatPmd.LoginAccPmd_C2S.channel_param");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         5, this->channel_param(), target);
@@ -731,12 +731,12 @@ void LoginPmd_C2S::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(serialize_to_array_end:PlatPmd.LoginAccPmd_C2S)
   return target;
 }
 
-size_t LoginPmd_C2S::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PlatPmd.LoginPmd_C2S)
+size_t LoginAccPmd_C2S::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlatPmd.LoginAccPmd_C2S)
   size_t total_size = 0;
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -784,23 +784,23 @@ size_t LoginPmd_C2S::ByteSizeLong() const {
   return total_size;
 }
 
-void LoginPmd_C2S::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:PlatPmd.LoginPmd_C2S)
+void LoginAccPmd_C2S::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlatPmd.LoginAccPmd_C2S)
   GOOGLE_DCHECK_NE(&from, this);
-  const LoginPmd_C2S* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LoginPmd_C2S>(
+  const LoginAccPmd_C2S* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const LoginAccPmd_C2S>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlatPmd.LoginAccPmd_C2S)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlatPmd.LoginAccPmd_C2S)
     MergeFrom(*source);
   }
 }
 
-void LoginPmd_C2S::MergeFrom(const LoginPmd_C2S& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PlatPmd.LoginPmd_C2S)
+void LoginAccPmd_C2S::MergeFrom(const LoginAccPmd_C2S& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlatPmd.LoginAccPmd_C2S)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -828,29 +828,29 @@ void LoginPmd_C2S::MergeFrom(const LoginPmd_C2S& from) {
   }
 }
 
-void LoginPmd_C2S::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:PlatPmd.LoginPmd_C2S)
+void LoginAccPmd_C2S::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlatPmd.LoginAccPmd_C2S)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void LoginPmd_C2S::CopyFrom(const LoginPmd_C2S& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PlatPmd.LoginPmd_C2S)
+void LoginAccPmd_C2S::CopyFrom(const LoginAccPmd_C2S& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlatPmd.LoginAccPmd_C2S)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool LoginPmd_C2S::IsInitialized() const {
+bool LoginAccPmd_C2S::IsInitialized() const {
   return true;
 }
 
-void LoginPmd_C2S::Swap(LoginPmd_C2S* other) {
+void LoginAccPmd_C2S::Swap(LoginAccPmd_C2S* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void LoginPmd_C2S::InternalSwap(LoginPmd_C2S* other) {
+void LoginAccPmd_C2S::InternalSwap(LoginAccPmd_C2S* other) {
   using std::swap;
   platform_.Swap(&other->platform_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -865,7 +865,7 @@ void LoginPmd_C2S::InternalSwap(LoginPmd_C2S* other) {
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata LoginPmd_C2S::GetMetadata() const {
+::google::protobuf::Metadata LoginAccPmd_C2S::GetMetadata() const {
   protobuf_AccPmd_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_AccPmd_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -873,25 +873,25 @@ void LoginPmd_C2S::InternalSwap(LoginPmd_C2S* other) {
 
 // ===================================================================
 
-void LoginPmd_S2C::InitAsDefaultInstance() {
+void LoginAccPmd_S2C::InitAsDefaultInstance() {
 }
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
-const int LoginPmd_S2C::kCodeFieldNumber;
-const int LoginPmd_S2C::kIdFieldNumber;
-const int LoginPmd_S2C::kChannelOpenIdFieldNumber;
-const int LoginPmd_S2C::kGameAccountIdFieldNumber;
-const int LoginPmd_S2C::kGameAccountSignFieldNumber;
-const int LoginPmd_S2C::kGameLoginKeyFieldNumber;
+const int LoginAccPmd_S2C::kCodeFieldNumber;
+const int LoginAccPmd_S2C::kIdFieldNumber;
+const int LoginAccPmd_S2C::kChannelOpenIdFieldNumber;
+const int LoginAccPmd_S2C::kGameAccountIdFieldNumber;
+const int LoginAccPmd_S2C::kGameAccountSignFieldNumber;
+const int LoginAccPmd_S2C::kGameLoginKeyFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
-LoginPmd_S2C::LoginPmd_S2C()
+LoginAccPmd_S2C::LoginAccPmd_S2C()
   : ::google::protobuf::Message(), _internal_metadata_(NULL) {
   ::google::protobuf::internal::InitSCC(
-      &protobuf_AccPmd_2eproto::scc_info_LoginPmd_S2C.base);
+      &protobuf_AccPmd_2eproto::scc_info_LoginAccPmd_S2C.base);
   SharedCtor();
-  // @@protoc_insertion_point(constructor:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(constructor:PlatPmd.LoginAccPmd_S2C)
 }
-LoginPmd_S2C::LoginPmd_S2C(const LoginPmd_S2C& from)
+LoginAccPmd_S2C::LoginAccPmd_S2C(const LoginAccPmd_S2C& from)
   : ::google::protobuf::Message(),
       _internal_metadata_(NULL) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -914,10 +914,10 @@ LoginPmd_S2C::LoginPmd_S2C(const LoginPmd_S2C& from)
   ::memcpy(&code_, &from.code_,
     static_cast<size_t>(reinterpret_cast<char*>(&id_) -
     reinterpret_cast<char*>(&code_)) + sizeof(id_));
-  // @@protoc_insertion_point(copy_constructor:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(copy_constructor:PlatPmd.LoginAccPmd_S2C)
 }
 
-void LoginPmd_S2C::SharedCtor() {
+void LoginAccPmd_S2C::SharedCtor() {
   channel_open_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_id_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_sign_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
@@ -927,34 +927,34 @@ void LoginPmd_S2C::SharedCtor() {
       reinterpret_cast<char*>(&code_)) + sizeof(id_));
 }
 
-LoginPmd_S2C::~LoginPmd_S2C() {
-  // @@protoc_insertion_point(destructor:PlatPmd.LoginPmd_S2C)
+LoginAccPmd_S2C::~LoginAccPmd_S2C() {
+  // @@protoc_insertion_point(destructor:PlatPmd.LoginAccPmd_S2C)
   SharedDtor();
 }
 
-void LoginPmd_S2C::SharedDtor() {
+void LoginAccPmd_S2C::SharedDtor() {
   channel_open_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_id_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_account_sign_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   game_login_key_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 
-void LoginPmd_S2C::SetCachedSize(int size) const {
+void LoginAccPmd_S2C::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* LoginPmd_S2C::descriptor() {
+const ::google::protobuf::Descriptor* LoginAccPmd_S2C::descriptor() {
   ::protobuf_AccPmd_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_AccPmd_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
-const LoginPmd_S2C& LoginPmd_S2C::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_AccPmd_2eproto::scc_info_LoginPmd_S2C.base);
+const LoginAccPmd_S2C& LoginAccPmd_S2C::default_instance() {
+  ::google::protobuf::internal::InitSCC(&protobuf_AccPmd_2eproto::scc_info_LoginAccPmd_S2C.base);
   return *internal_default_instance();
 }
 
 
-void LoginPmd_S2C::Clear() {
-// @@protoc_insertion_point(message_clear_start:PlatPmd.LoginPmd_S2C)
+void LoginAccPmd_S2C::Clear() {
+// @@protoc_insertion_point(message_clear_start:PlatPmd.LoginAccPmd_S2C)
   ::google::protobuf::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -969,11 +969,11 @@ void LoginPmd_S2C::Clear() {
   _internal_metadata_.Clear();
 }
 
-bool LoginPmd_S2C::MergePartialFromCodedStream(
+bool LoginAccPmd_S2C::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
 #define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
-  // @@protoc_insertion_point(parse_start:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(parse_start:PlatPmd.LoginAccPmd_S2C)
   for (;;) {
     ::std::pair<::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
     tag = p.first;
@@ -1016,7 +1016,7 @@ bool LoginPmd_S2C::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->channel_open_id().data(), static_cast<int>(this->channel_open_id().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_S2C.channel_open_id"));
+            "PlatPmd.LoginAccPmd_S2C.channel_open_id"));
         } else {
           goto handle_unusual;
         }
@@ -1032,7 +1032,7 @@ bool LoginPmd_S2C::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->game_account_id().data(), static_cast<int>(this->game_account_id().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_S2C.game_account_id"));
+            "PlatPmd.LoginAccPmd_S2C.game_account_id"));
         } else {
           goto handle_unusual;
         }
@@ -1048,7 +1048,7 @@ bool LoginPmd_S2C::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->game_account_sign().data(), static_cast<int>(this->game_account_sign().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_S2C.game_account_sign"));
+            "PlatPmd.LoginAccPmd_S2C.game_account_sign"));
         } else {
           goto handle_unusual;
         }
@@ -1064,7 +1064,7 @@ bool LoginPmd_S2C::MergePartialFromCodedStream(
           DO_(::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
             this->game_login_key().data(), static_cast<int>(this->game_login_key().length()),
             ::google::protobuf::internal::WireFormatLite::PARSE,
-            "PlatPmd.LoginPmd_S2C.game_login_key"));
+            "PlatPmd.LoginAccPmd_S2C.game_login_key"));
         } else {
           goto handle_unusual;
         }
@@ -1083,17 +1083,17 @@ bool LoginPmd_S2C::MergePartialFromCodedStream(
     }
   }
 success:
-  // @@protoc_insertion_point(parse_success:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(parse_success:PlatPmd.LoginAccPmd_S2C)
   return true;
 failure:
-  // @@protoc_insertion_point(parse_failure:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(parse_failure:PlatPmd.LoginAccPmd_S2C)
   return false;
 #undef DO_
 }
 
-void LoginPmd_S2C::SerializeWithCachedSizes(
+void LoginAccPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
-  // @@protoc_insertion_point(serialize_start:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(serialize_start:PlatPmd.LoginAccPmd_S2C)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1112,7 +1112,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->channel_open_id().data(), static_cast<int>(this->channel_open_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.channel_open_id");
+      "PlatPmd.LoginAccPmd_S2C.channel_open_id");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->channel_open_id(), output);
   }
@@ -1122,7 +1122,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_id().data(), static_cast<int>(this->game_account_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.game_account_id");
+      "PlatPmd.LoginAccPmd_S2C.game_account_id");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->game_account_id(), output);
   }
@@ -1132,7 +1132,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_sign().data(), static_cast<int>(this->game_account_sign().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.game_account_sign");
+      "PlatPmd.LoginAccPmd_S2C.game_account_sign");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->game_account_sign(), output);
   }
@@ -1142,7 +1142,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_login_key().data(), static_cast<int>(this->game_login_key().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.game_login_key");
+      "PlatPmd.LoginAccPmd_S2C.game_login_key");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       6, this->game_login_key(), output);
   }
@@ -1151,13 +1151,13 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
   }
-  // @@protoc_insertion_point(serialize_end:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(serialize_end:PlatPmd.LoginAccPmd_S2C)
 }
 
-::google::protobuf::uint8* LoginPmd_S2C::InternalSerializeWithCachedSizesToArray(
+::google::protobuf::uint8* LoginAccPmd_S2C::InternalSerializeWithCachedSizesToArray(
     bool deterministic, ::google::protobuf::uint8* target) const {
   (void)deterministic; // Unused
-  // @@protoc_insertion_point(serialize_to_array_start:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(serialize_to_array_start:PlatPmd.LoginAccPmd_S2C)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1176,7 +1176,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->channel_open_id().data(), static_cast<int>(this->channel_open_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.channel_open_id");
+      "PlatPmd.LoginAccPmd_S2C.channel_open_id");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->channel_open_id(), target);
@@ -1187,7 +1187,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_id().data(), static_cast<int>(this->game_account_id().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.game_account_id");
+      "PlatPmd.LoginAccPmd_S2C.game_account_id");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         4, this->game_account_id(), target);
@@ -1198,7 +1198,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_account_sign().data(), static_cast<int>(this->game_account_sign().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.game_account_sign");
+      "PlatPmd.LoginAccPmd_S2C.game_account_sign");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         5, this->game_account_sign(), target);
@@ -1209,7 +1209,7 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::VerifyUtf8String(
       this->game_login_key().data(), static_cast<int>(this->game_login_key().length()),
       ::google::protobuf::internal::WireFormatLite::SERIALIZE,
-      "PlatPmd.LoginPmd_S2C.game_login_key");
+      "PlatPmd.LoginAccPmd_S2C.game_login_key");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         6, this->game_login_key(), target);
@@ -1219,12 +1219,12 @@ void LoginPmd_S2C::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
         (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(serialize_to_array_end:PlatPmd.LoginAccPmd_S2C)
   return target;
 }
 
-size_t LoginPmd_S2C::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:PlatPmd.LoginPmd_S2C)
+size_t LoginAccPmd_S2C::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:PlatPmd.LoginAccPmd_S2C)
   size_t total_size = 0;
 
   if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
@@ -1279,23 +1279,23 @@ size_t LoginPmd_S2C::ByteSizeLong() const {
   return total_size;
 }
 
-void LoginPmd_S2C::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:PlatPmd.LoginPmd_S2C)
+void LoginAccPmd_S2C::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:PlatPmd.LoginAccPmd_S2C)
   GOOGLE_DCHECK_NE(&from, this);
-  const LoginPmd_S2C* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LoginPmd_S2C>(
+  const LoginAccPmd_S2C* source =
+      ::google::protobuf::internal::DynamicCastToGenerated<const LoginAccPmd_S2C>(
           &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:PlatPmd.LoginAccPmd_S2C)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:PlatPmd.LoginAccPmd_S2C)
     MergeFrom(*source);
   }
 }
 
-void LoginPmd_S2C::MergeFrom(const LoginPmd_S2C& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:PlatPmd.LoginPmd_S2C)
+void LoginAccPmd_S2C::MergeFrom(const LoginAccPmd_S2C& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:PlatPmd.LoginAccPmd_S2C)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::google::protobuf::uint32 cached_has_bits = 0;
@@ -1325,29 +1325,29 @@ void LoginPmd_S2C::MergeFrom(const LoginPmd_S2C& from) {
   }
 }
 
-void LoginPmd_S2C::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:PlatPmd.LoginPmd_S2C)
+void LoginAccPmd_S2C::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:PlatPmd.LoginAccPmd_S2C)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void LoginPmd_S2C::CopyFrom(const LoginPmd_S2C& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:PlatPmd.LoginPmd_S2C)
+void LoginAccPmd_S2C::CopyFrom(const LoginAccPmd_S2C& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:PlatPmd.LoginAccPmd_S2C)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool LoginPmd_S2C::IsInitialized() const {
+bool LoginAccPmd_S2C::IsInitialized() const {
   return true;
 }
 
-void LoginPmd_S2C::Swap(LoginPmd_S2C* other) {
+void LoginAccPmd_S2C::Swap(LoginAccPmd_S2C* other) {
   if (other == this) return;
   InternalSwap(other);
 }
-void LoginPmd_S2C::InternalSwap(LoginPmd_S2C* other) {
+void LoginAccPmd_S2C::InternalSwap(LoginAccPmd_S2C* other) {
   using std::swap;
   channel_open_id_.Swap(&other->channel_open_id_, &::google::protobuf::internal::GetEmptyStringAlreadyInited(),
     GetArenaNoVirtual());
@@ -1362,7 +1362,7 @@ void LoginPmd_S2C::InternalSwap(LoginPmd_S2C* other) {
   _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
-::google::protobuf::Metadata LoginPmd_S2C::GetMetadata() const {
+::google::protobuf::Metadata LoginAccPmd_S2C::GetMetadata() const {
   protobuf_AccPmd_2eproto::protobuf_AssignDescriptorsOnce();
   return ::protobuf_AccPmd_2eproto::file_level_metadata[kIndexInFileMessages];
 }
@@ -1375,11 +1375,11 @@ namespace protobuf {
 template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::PlatPmd::AccPmd* Arena::CreateMaybeMessage< ::PlatPmd::AccPmd >(Arena* arena) {
   return Arena::CreateInternal< ::PlatPmd::AccPmd >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::PlatPmd::LoginPmd_C2S* Arena::CreateMaybeMessage< ::PlatPmd::LoginPmd_C2S >(Arena* arena) {
-  return Arena::CreateInternal< ::PlatPmd::LoginPmd_C2S >(arena);
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::PlatPmd::LoginAccPmd_C2S* Arena::CreateMaybeMessage< ::PlatPmd::LoginAccPmd_C2S >(Arena* arena) {
+  return Arena::CreateInternal< ::PlatPmd::LoginAccPmd_C2S >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::PlatPmd::LoginPmd_S2C* Arena::CreateMaybeMessage< ::PlatPmd::LoginPmd_S2C >(Arena* arena) {
-  return Arena::CreateInternal< ::PlatPmd::LoginPmd_S2C >(arena);
+template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::PlatPmd::LoginAccPmd_S2C* Arena::CreateMaybeMessage< ::PlatPmd::LoginAccPmd_S2C >(Arena* arena) {
+  return Arena::CreateInternal< ::PlatPmd::LoginAccPmd_S2C >(arena);
 }
 }  // namespace protobuf
 }  // namespace google

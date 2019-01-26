@@ -50,18 +50,18 @@ namespace PlatPmd {
 class AccPmd;
 class AccPmdDefaultTypeInternal;
 extern AccPmdDefaultTypeInternal _AccPmd_default_instance_;
-class LoginPmd_C2S;
-class LoginPmd_C2SDefaultTypeInternal;
-extern LoginPmd_C2SDefaultTypeInternal _LoginPmd_C2S_default_instance_;
-class LoginPmd_S2C;
-class LoginPmd_S2CDefaultTypeInternal;
-extern LoginPmd_S2CDefaultTypeInternal _LoginPmd_S2C_default_instance_;
+class LoginAccPmd_C2S;
+class LoginAccPmd_C2SDefaultTypeInternal;
+extern LoginAccPmd_C2SDefaultTypeInternal _LoginAccPmd_C2S_default_instance_;
+class LoginAccPmd_S2C;
+class LoginAccPmd_S2CDefaultTypeInternal;
+extern LoginAccPmd_S2CDefaultTypeInternal _LoginAccPmd_S2C_default_instance_;
 }  // namespace PlatPmd
 namespace google {
 namespace protobuf {
 template<> ::PlatPmd::AccPmd* Arena::CreateMaybeMessage<::PlatPmd::AccPmd>(Arena*);
-template<> ::PlatPmd::LoginPmd_C2S* Arena::CreateMaybeMessage<::PlatPmd::LoginPmd_C2S>(Arena*);
-template<> ::PlatPmd::LoginPmd_S2C* Arena::CreateMaybeMessage<::PlatPmd::LoginPmd_S2C>(Arena*);
+template<> ::PlatPmd::LoginAccPmd_C2S* Arena::CreateMaybeMessage<::PlatPmd::LoginAccPmd_C2S>(Arena*);
+template<> ::PlatPmd::LoginAccPmd_S2C* Arena::CreateMaybeMessage<::PlatPmd::LoginAccPmd_S2C>(Arena*);
 }  // namespace protobuf
 }  // namespace google
 namespace PlatPmd {
@@ -234,24 +234,24 @@ class AccPmd : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 };
 // -------------------------------------------------------------------
 
-class LoginPmd_C2S : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:PlatPmd.LoginPmd_C2S) */ {
+class LoginAccPmd_C2S : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:PlatPmd.LoginAccPmd_C2S) */ {
  public:
-  LoginPmd_C2S();
-  virtual ~LoginPmd_C2S();
+  LoginAccPmd_C2S();
+  virtual ~LoginAccPmd_C2S();
 
-  LoginPmd_C2S(const LoginPmd_C2S& from);
+  LoginAccPmd_C2S(const LoginAccPmd_C2S& from);
 
-  inline LoginPmd_C2S& operator=(const LoginPmd_C2S& from) {
+  inline LoginAccPmd_C2S& operator=(const LoginAccPmd_C2S& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  LoginPmd_C2S(LoginPmd_C2S&& from) noexcept
-    : LoginPmd_C2S() {
+  LoginAccPmd_C2S(LoginAccPmd_C2S&& from) noexcept
+    : LoginAccPmd_C2S() {
     *this = ::std::move(from);
   }
 
-  inline LoginPmd_C2S& operator=(LoginPmd_C2S&& from) noexcept {
+  inline LoginAccPmd_C2S& operator=(LoginAccPmd_C2S&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -261,34 +261,34 @@ class LoginPmd_C2S : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const LoginPmd_C2S& default_instance();
+  static const LoginAccPmd_C2S& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const LoginPmd_C2S* internal_default_instance() {
-    return reinterpret_cast<const LoginPmd_C2S*>(
-               &_LoginPmd_C2S_default_instance_);
+  static inline const LoginAccPmd_C2S* internal_default_instance() {
+    return reinterpret_cast<const LoginAccPmd_C2S*>(
+               &_LoginAccPmd_C2S_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     1;
 
-  void Swap(LoginPmd_C2S* other);
-  friend void swap(LoginPmd_C2S& a, LoginPmd_C2S& b) {
+  void Swap(LoginAccPmd_C2S* other);
+  friend void swap(LoginAccPmd_C2S& a, LoginAccPmd_C2S& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline LoginPmd_C2S* New() const final {
-    return CreateMaybeMessage<LoginPmd_C2S>(NULL);
+  inline LoginAccPmd_C2S* New() const final {
+    return CreateMaybeMessage<LoginAccPmd_C2S>(NULL);
   }
 
-  LoginPmd_C2S* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<LoginPmd_C2S>(arena);
+  LoginAccPmd_C2S* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<LoginAccPmd_C2S>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const LoginPmd_C2S& from);
-  void MergeFrom(const LoginPmd_C2S& from);
+  void CopyFrom(const LoginAccPmd_C2S& from);
+  void MergeFrom(const LoginAccPmd_C2S& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -305,7 +305,7 @@ class LoginPmd_C2S : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(LoginPmd_C2S* other);
+  void InternalSwap(LoginAccPmd_C2S* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -391,7 +391,7 @@ class LoginPmd_C2S : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::std::string* release_channel_param();
   void set_allocated_channel_param(::std::string* channel_param);
 
-  // @@protoc_insertion_point(class_scope:PlatPmd.LoginPmd_C2S)
+  // @@protoc_insertion_point(class_scope:PlatPmd.LoginAccPmd_C2S)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -405,24 +405,24 @@ class LoginPmd_C2S : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class LoginPmd_S2C : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:PlatPmd.LoginPmd_S2C) */ {
+class LoginAccPmd_S2C : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:PlatPmd.LoginAccPmd_S2C) */ {
  public:
-  LoginPmd_S2C();
-  virtual ~LoginPmd_S2C();
+  LoginAccPmd_S2C();
+  virtual ~LoginAccPmd_S2C();
 
-  LoginPmd_S2C(const LoginPmd_S2C& from);
+  LoginAccPmd_S2C(const LoginAccPmd_S2C& from);
 
-  inline LoginPmd_S2C& operator=(const LoginPmd_S2C& from) {
+  inline LoginAccPmd_S2C& operator=(const LoginAccPmd_S2C& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  LoginPmd_S2C(LoginPmd_S2C&& from) noexcept
-    : LoginPmd_S2C() {
+  LoginAccPmd_S2C(LoginAccPmd_S2C&& from) noexcept
+    : LoginAccPmd_S2C() {
     *this = ::std::move(from);
   }
 
-  inline LoginPmd_S2C& operator=(LoginPmd_S2C&& from) noexcept {
+  inline LoginAccPmd_S2C& operator=(LoginAccPmd_S2C&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -432,34 +432,34 @@ class LoginPmd_S2C : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const LoginPmd_S2C& default_instance();
+  static const LoginAccPmd_S2C& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const LoginPmd_S2C* internal_default_instance() {
-    return reinterpret_cast<const LoginPmd_S2C*>(
-               &_LoginPmd_S2C_default_instance_);
+  static inline const LoginAccPmd_S2C* internal_default_instance() {
+    return reinterpret_cast<const LoginAccPmd_S2C*>(
+               &_LoginAccPmd_S2C_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     2;
 
-  void Swap(LoginPmd_S2C* other);
-  friend void swap(LoginPmd_S2C& a, LoginPmd_S2C& b) {
+  void Swap(LoginAccPmd_S2C* other);
+  friend void swap(LoginAccPmd_S2C& a, LoginAccPmd_S2C& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline LoginPmd_S2C* New() const final {
-    return CreateMaybeMessage<LoginPmd_S2C>(NULL);
+  inline LoginAccPmd_S2C* New() const final {
+    return CreateMaybeMessage<LoginAccPmd_S2C>(NULL);
   }
 
-  LoginPmd_S2C* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<LoginPmd_S2C>(arena);
+  LoginAccPmd_S2C* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<LoginAccPmd_S2C>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const LoginPmd_S2C& from);
-  void MergeFrom(const LoginPmd_S2C& from);
+  void CopyFrom(const LoginAccPmd_S2C& from);
+  void MergeFrom(const LoginAccPmd_S2C& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -476,7 +476,7 @@ class LoginPmd_S2C : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(LoginPmd_S2C* other);
+  void InternalSwap(LoginAccPmd_S2C* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -560,7 +560,7 @@ class LoginPmd_S2C : public ::google::protobuf::Message /* @@protoc_insertion_po
   ::google::protobuf::int32 id() const;
   void set_id(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PlatPmd.LoginPmd_S2C)
+  // @@protoc_insertion_point(class_scope:PlatPmd.LoginAccPmd_S2C)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -586,515 +586,515 @@ class LoginPmd_S2C : public ::google::protobuf::Message /* @@protoc_insertion_po
 
 // -------------------------------------------------------------------
 
-// LoginPmd_C2S
+// LoginAccPmd_C2S
 
 // string platform = 1;
-inline void LoginPmd_C2S::clear_platform() {
+inline void LoginAccPmd_C2S::clear_platform() {
   platform_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_C2S::platform() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_C2S.platform)
+inline const ::std::string& LoginAccPmd_C2S::platform() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_C2S.platform)
   return platform_.GetNoArena();
 }
-inline void LoginPmd_C2S::set_platform(const ::std::string& value) {
+inline void LoginAccPmd_C2S::set_platform(const ::std::string& value) {
   
   platform_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_C2S.platform)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_C2S.platform)
 }
 #if LANG_CXX11
-inline void LoginPmd_C2S::set_platform(::std::string&& value) {
+inline void LoginAccPmd_C2S::set_platform(::std::string&& value) {
   
   platform_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_C2S.platform)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_C2S.platform)
 }
 #endif
-inline void LoginPmd_C2S::set_platform(const char* value) {
+inline void LoginAccPmd_C2S::set_platform(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   platform_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_C2S.platform)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_C2S.platform)
 }
-inline void LoginPmd_C2S::set_platform(const char* value, size_t size) {
+inline void LoginAccPmd_C2S::set_platform(const char* value, size_t size) {
   
   platform_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_C2S.platform)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_C2S.platform)
 }
-inline ::std::string* LoginPmd_C2S::mutable_platform() {
+inline ::std::string* LoginAccPmd_C2S::mutable_platform() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_C2S.platform)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_C2S.platform)
   return platform_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_C2S::release_platform() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_C2S.platform)
+inline ::std::string* LoginAccPmd_C2S::release_platform() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_C2S.platform)
   
   return platform_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_C2S::set_allocated_platform(::std::string* platform) {
+inline void LoginAccPmd_C2S::set_allocated_platform(::std::string* platform) {
   if (platform != NULL) {
     
   } else {
     
   }
   platform_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), platform);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_C2S.platform)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_C2S.platform)
 }
 
 // string game_account_id = 2;
-inline void LoginPmd_C2S::clear_game_account_id() {
+inline void LoginAccPmd_C2S::clear_game_account_id() {
   game_account_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_C2S::game_account_id() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_C2S.game_account_id)
+inline const ::std::string& LoginAccPmd_C2S::game_account_id() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_C2S.game_account_id)
   return game_account_id_.GetNoArena();
 }
-inline void LoginPmd_C2S::set_game_account_id(const ::std::string& value) {
+inline void LoginAccPmd_C2S::set_game_account_id(const ::std::string& value) {
   
   game_account_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_C2S.game_account_id)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_C2S.game_account_id)
 }
 #if LANG_CXX11
-inline void LoginPmd_C2S::set_game_account_id(::std::string&& value) {
+inline void LoginAccPmd_C2S::set_game_account_id(::std::string&& value) {
   
   game_account_id_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_C2S.game_account_id)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_C2S.game_account_id)
 }
 #endif
-inline void LoginPmd_C2S::set_game_account_id(const char* value) {
+inline void LoginAccPmd_C2S::set_game_account_id(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   game_account_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_C2S.game_account_id)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_C2S.game_account_id)
 }
-inline void LoginPmd_C2S::set_game_account_id(const char* value, size_t size) {
+inline void LoginAccPmd_C2S::set_game_account_id(const char* value, size_t size) {
   
   game_account_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_C2S.game_account_id)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_C2S.game_account_id)
 }
-inline ::std::string* LoginPmd_C2S::mutable_game_account_id() {
+inline ::std::string* LoginAccPmd_C2S::mutable_game_account_id() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_C2S.game_account_id)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_C2S.game_account_id)
   return game_account_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_C2S::release_game_account_id() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_C2S.game_account_id)
+inline ::std::string* LoginAccPmd_C2S::release_game_account_id() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_C2S.game_account_id)
   
   return game_account_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_C2S::set_allocated_game_account_id(::std::string* game_account_id) {
+inline void LoginAccPmd_C2S::set_allocated_game_account_id(::std::string* game_account_id) {
   if (game_account_id != NULL) {
     
   } else {
     
   }
   game_account_id_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), game_account_id);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_C2S.game_account_id)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_C2S.game_account_id)
 }
 
 // string game_account_sign = 3;
-inline void LoginPmd_C2S::clear_game_account_sign() {
+inline void LoginAccPmd_C2S::clear_game_account_sign() {
   game_account_sign_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_C2S::game_account_sign() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_C2S.game_account_sign)
+inline const ::std::string& LoginAccPmd_C2S::game_account_sign() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_C2S.game_account_sign)
   return game_account_sign_.GetNoArena();
 }
-inline void LoginPmd_C2S::set_game_account_sign(const ::std::string& value) {
+inline void LoginAccPmd_C2S::set_game_account_sign(const ::std::string& value) {
   
   game_account_sign_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_C2S.game_account_sign)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_C2S.game_account_sign)
 }
 #if LANG_CXX11
-inline void LoginPmd_C2S::set_game_account_sign(::std::string&& value) {
+inline void LoginAccPmd_C2S::set_game_account_sign(::std::string&& value) {
   
   game_account_sign_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_C2S.game_account_sign)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_C2S.game_account_sign)
 }
 #endif
-inline void LoginPmd_C2S::set_game_account_sign(const char* value) {
+inline void LoginAccPmd_C2S::set_game_account_sign(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   game_account_sign_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_C2S.game_account_sign)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_C2S.game_account_sign)
 }
-inline void LoginPmd_C2S::set_game_account_sign(const char* value, size_t size) {
+inline void LoginAccPmd_C2S::set_game_account_sign(const char* value, size_t size) {
   
   game_account_sign_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_C2S.game_account_sign)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_C2S.game_account_sign)
 }
-inline ::std::string* LoginPmd_C2S::mutable_game_account_sign() {
+inline ::std::string* LoginAccPmd_C2S::mutable_game_account_sign() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_C2S.game_account_sign)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_C2S.game_account_sign)
   return game_account_sign_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_C2S::release_game_account_sign() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_C2S.game_account_sign)
+inline ::std::string* LoginAccPmd_C2S::release_game_account_sign() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_C2S.game_account_sign)
   
   return game_account_sign_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_C2S::set_allocated_game_account_sign(::std::string* game_account_sign) {
+inline void LoginAccPmd_C2S::set_allocated_game_account_sign(::std::string* game_account_sign) {
   if (game_account_sign != NULL) {
     
   } else {
     
   }
   game_account_sign_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), game_account_sign);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_C2S.game_account_sign)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_C2S.game_account_sign)
 }
 
 // string channel_open_id = 4;
-inline void LoginPmd_C2S::clear_channel_open_id() {
+inline void LoginAccPmd_C2S::clear_channel_open_id() {
   channel_open_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_C2S::channel_open_id() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_C2S.channel_open_id)
+inline const ::std::string& LoginAccPmd_C2S::channel_open_id() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_C2S.channel_open_id)
   return channel_open_id_.GetNoArena();
 }
-inline void LoginPmd_C2S::set_channel_open_id(const ::std::string& value) {
+inline void LoginAccPmd_C2S::set_channel_open_id(const ::std::string& value) {
   
   channel_open_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_C2S.channel_open_id)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_C2S.channel_open_id)
 }
 #if LANG_CXX11
-inline void LoginPmd_C2S::set_channel_open_id(::std::string&& value) {
+inline void LoginAccPmd_C2S::set_channel_open_id(::std::string&& value) {
   
   channel_open_id_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_C2S.channel_open_id)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_C2S.channel_open_id)
 }
 #endif
-inline void LoginPmd_C2S::set_channel_open_id(const char* value) {
+inline void LoginAccPmd_C2S::set_channel_open_id(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   channel_open_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_C2S.channel_open_id)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_C2S.channel_open_id)
 }
-inline void LoginPmd_C2S::set_channel_open_id(const char* value, size_t size) {
+inline void LoginAccPmd_C2S::set_channel_open_id(const char* value, size_t size) {
   
   channel_open_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_C2S.channel_open_id)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_C2S.channel_open_id)
 }
-inline ::std::string* LoginPmd_C2S::mutable_channel_open_id() {
+inline ::std::string* LoginAccPmd_C2S::mutable_channel_open_id() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_C2S.channel_open_id)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_C2S.channel_open_id)
   return channel_open_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_C2S::release_channel_open_id() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_C2S.channel_open_id)
+inline ::std::string* LoginAccPmd_C2S::release_channel_open_id() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_C2S.channel_open_id)
   
   return channel_open_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_C2S::set_allocated_channel_open_id(::std::string* channel_open_id) {
+inline void LoginAccPmd_C2S::set_allocated_channel_open_id(::std::string* channel_open_id) {
   if (channel_open_id != NULL) {
     
   } else {
     
   }
   channel_open_id_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), channel_open_id);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_C2S.channel_open_id)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_C2S.channel_open_id)
 }
 
 // string channel_param = 5;
-inline void LoginPmd_C2S::clear_channel_param() {
+inline void LoginAccPmd_C2S::clear_channel_param() {
   channel_param_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_C2S::channel_param() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_C2S.channel_param)
+inline const ::std::string& LoginAccPmd_C2S::channel_param() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_C2S.channel_param)
   return channel_param_.GetNoArena();
 }
-inline void LoginPmd_C2S::set_channel_param(const ::std::string& value) {
+inline void LoginAccPmd_C2S::set_channel_param(const ::std::string& value) {
   
   channel_param_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_C2S.channel_param)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_C2S.channel_param)
 }
 #if LANG_CXX11
-inline void LoginPmd_C2S::set_channel_param(::std::string&& value) {
+inline void LoginAccPmd_C2S::set_channel_param(::std::string&& value) {
   
   channel_param_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_C2S.channel_param)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_C2S.channel_param)
 }
 #endif
-inline void LoginPmd_C2S::set_channel_param(const char* value) {
+inline void LoginAccPmd_C2S::set_channel_param(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   channel_param_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_C2S.channel_param)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_C2S.channel_param)
 }
-inline void LoginPmd_C2S::set_channel_param(const char* value, size_t size) {
+inline void LoginAccPmd_C2S::set_channel_param(const char* value, size_t size) {
   
   channel_param_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_C2S.channel_param)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_C2S.channel_param)
 }
-inline ::std::string* LoginPmd_C2S::mutable_channel_param() {
+inline ::std::string* LoginAccPmd_C2S::mutable_channel_param() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_C2S.channel_param)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_C2S.channel_param)
   return channel_param_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_C2S::release_channel_param() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_C2S.channel_param)
+inline ::std::string* LoginAccPmd_C2S::release_channel_param() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_C2S.channel_param)
   
   return channel_param_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_C2S::set_allocated_channel_param(::std::string* channel_param) {
+inline void LoginAccPmd_C2S::set_allocated_channel_param(::std::string* channel_param) {
   if (channel_param != NULL) {
     
   } else {
     
   }
   channel_param_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), channel_param);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_C2S.channel_param)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_C2S.channel_param)
 }
 
 // -------------------------------------------------------------------
 
-// LoginPmd_S2C
+// LoginAccPmd_S2C
 
 // int32 code = 1;
-inline void LoginPmd_S2C::clear_code() {
+inline void LoginAccPmd_S2C::clear_code() {
   code_ = 0;
 }
-inline ::google::protobuf::int32 LoginPmd_S2C::code() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_S2C.code)
+inline ::google::protobuf::int32 LoginAccPmd_S2C::code() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_S2C.code)
   return code_;
 }
-inline void LoginPmd_S2C::set_code(::google::protobuf::int32 value) {
+inline void LoginAccPmd_S2C::set_code(::google::protobuf::int32 value) {
   
   code_ = value;
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_S2C.code)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_S2C.code)
 }
 
 // int32 id = 2;
-inline void LoginPmd_S2C::clear_id() {
+inline void LoginAccPmd_S2C::clear_id() {
   id_ = 0;
 }
-inline ::google::protobuf::int32 LoginPmd_S2C::id() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_S2C.id)
+inline ::google::protobuf::int32 LoginAccPmd_S2C::id() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_S2C.id)
   return id_;
 }
-inline void LoginPmd_S2C::set_id(::google::protobuf::int32 value) {
+inline void LoginAccPmd_S2C::set_id(::google::protobuf::int32 value) {
   
   id_ = value;
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_S2C.id)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_S2C.id)
 }
 
 // string channel_open_id = 3;
-inline void LoginPmd_S2C::clear_channel_open_id() {
+inline void LoginAccPmd_S2C::clear_channel_open_id() {
   channel_open_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_S2C::channel_open_id() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_S2C.channel_open_id)
+inline const ::std::string& LoginAccPmd_S2C::channel_open_id() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_S2C.channel_open_id)
   return channel_open_id_.GetNoArena();
 }
-inline void LoginPmd_S2C::set_channel_open_id(const ::std::string& value) {
+inline void LoginAccPmd_S2C::set_channel_open_id(const ::std::string& value) {
   
   channel_open_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_S2C.channel_open_id)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_S2C.channel_open_id)
 }
 #if LANG_CXX11
-inline void LoginPmd_S2C::set_channel_open_id(::std::string&& value) {
+inline void LoginAccPmd_S2C::set_channel_open_id(::std::string&& value) {
   
   channel_open_id_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_S2C.channel_open_id)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_S2C.channel_open_id)
 }
 #endif
-inline void LoginPmd_S2C::set_channel_open_id(const char* value) {
+inline void LoginAccPmd_S2C::set_channel_open_id(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   channel_open_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_S2C.channel_open_id)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_S2C.channel_open_id)
 }
-inline void LoginPmd_S2C::set_channel_open_id(const char* value, size_t size) {
+inline void LoginAccPmd_S2C::set_channel_open_id(const char* value, size_t size) {
   
   channel_open_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_S2C.channel_open_id)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_S2C.channel_open_id)
 }
-inline ::std::string* LoginPmd_S2C::mutable_channel_open_id() {
+inline ::std::string* LoginAccPmd_S2C::mutable_channel_open_id() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_S2C.channel_open_id)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_S2C.channel_open_id)
   return channel_open_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_S2C::release_channel_open_id() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_S2C.channel_open_id)
+inline ::std::string* LoginAccPmd_S2C::release_channel_open_id() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_S2C.channel_open_id)
   
   return channel_open_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_S2C::set_allocated_channel_open_id(::std::string* channel_open_id) {
+inline void LoginAccPmd_S2C::set_allocated_channel_open_id(::std::string* channel_open_id) {
   if (channel_open_id != NULL) {
     
   } else {
     
   }
   channel_open_id_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), channel_open_id);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_S2C.channel_open_id)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_S2C.channel_open_id)
 }
 
 // string game_account_id = 4;
-inline void LoginPmd_S2C::clear_game_account_id() {
+inline void LoginAccPmd_S2C::clear_game_account_id() {
   game_account_id_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_S2C::game_account_id() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_S2C.game_account_id)
+inline const ::std::string& LoginAccPmd_S2C::game_account_id() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_S2C.game_account_id)
   return game_account_id_.GetNoArena();
 }
-inline void LoginPmd_S2C::set_game_account_id(const ::std::string& value) {
+inline void LoginAccPmd_S2C::set_game_account_id(const ::std::string& value) {
   
   game_account_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_S2C.game_account_id)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_S2C.game_account_id)
 }
 #if LANG_CXX11
-inline void LoginPmd_S2C::set_game_account_id(::std::string&& value) {
+inline void LoginAccPmd_S2C::set_game_account_id(::std::string&& value) {
   
   game_account_id_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_S2C.game_account_id)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_S2C.game_account_id)
 }
 #endif
-inline void LoginPmd_S2C::set_game_account_id(const char* value) {
+inline void LoginAccPmd_S2C::set_game_account_id(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   game_account_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_S2C.game_account_id)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_S2C.game_account_id)
 }
-inline void LoginPmd_S2C::set_game_account_id(const char* value, size_t size) {
+inline void LoginAccPmd_S2C::set_game_account_id(const char* value, size_t size) {
   
   game_account_id_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_S2C.game_account_id)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_S2C.game_account_id)
 }
-inline ::std::string* LoginPmd_S2C::mutable_game_account_id() {
+inline ::std::string* LoginAccPmd_S2C::mutable_game_account_id() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_S2C.game_account_id)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_S2C.game_account_id)
   return game_account_id_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_S2C::release_game_account_id() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_S2C.game_account_id)
+inline ::std::string* LoginAccPmd_S2C::release_game_account_id() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_S2C.game_account_id)
   
   return game_account_id_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_S2C::set_allocated_game_account_id(::std::string* game_account_id) {
+inline void LoginAccPmd_S2C::set_allocated_game_account_id(::std::string* game_account_id) {
   if (game_account_id != NULL) {
     
   } else {
     
   }
   game_account_id_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), game_account_id);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_S2C.game_account_id)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_S2C.game_account_id)
 }
 
 // string game_account_sign = 5;
-inline void LoginPmd_S2C::clear_game_account_sign() {
+inline void LoginAccPmd_S2C::clear_game_account_sign() {
   game_account_sign_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_S2C::game_account_sign() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_S2C.game_account_sign)
+inline const ::std::string& LoginAccPmd_S2C::game_account_sign() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_S2C.game_account_sign)
   return game_account_sign_.GetNoArena();
 }
-inline void LoginPmd_S2C::set_game_account_sign(const ::std::string& value) {
+inline void LoginAccPmd_S2C::set_game_account_sign(const ::std::string& value) {
   
   game_account_sign_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_S2C.game_account_sign)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_S2C.game_account_sign)
 }
 #if LANG_CXX11
-inline void LoginPmd_S2C::set_game_account_sign(::std::string&& value) {
+inline void LoginAccPmd_S2C::set_game_account_sign(::std::string&& value) {
   
   game_account_sign_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_S2C.game_account_sign)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_S2C.game_account_sign)
 }
 #endif
-inline void LoginPmd_S2C::set_game_account_sign(const char* value) {
+inline void LoginAccPmd_S2C::set_game_account_sign(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   game_account_sign_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_S2C.game_account_sign)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_S2C.game_account_sign)
 }
-inline void LoginPmd_S2C::set_game_account_sign(const char* value, size_t size) {
+inline void LoginAccPmd_S2C::set_game_account_sign(const char* value, size_t size) {
   
   game_account_sign_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_S2C.game_account_sign)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_S2C.game_account_sign)
 }
-inline ::std::string* LoginPmd_S2C::mutable_game_account_sign() {
+inline ::std::string* LoginAccPmd_S2C::mutable_game_account_sign() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_S2C.game_account_sign)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_S2C.game_account_sign)
   return game_account_sign_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_S2C::release_game_account_sign() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_S2C.game_account_sign)
+inline ::std::string* LoginAccPmd_S2C::release_game_account_sign() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_S2C.game_account_sign)
   
   return game_account_sign_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_S2C::set_allocated_game_account_sign(::std::string* game_account_sign) {
+inline void LoginAccPmd_S2C::set_allocated_game_account_sign(::std::string* game_account_sign) {
   if (game_account_sign != NULL) {
     
   } else {
     
   }
   game_account_sign_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), game_account_sign);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_S2C.game_account_sign)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_S2C.game_account_sign)
 }
 
 // string game_login_key = 6;
-inline void LoginPmd_S2C::clear_game_login_key() {
+inline void LoginAccPmd_S2C::clear_game_login_key() {
   game_login_key_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline const ::std::string& LoginPmd_S2C::game_login_key() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.LoginPmd_S2C.game_login_key)
+inline const ::std::string& LoginAccPmd_S2C::game_login_key() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.LoginAccPmd_S2C.game_login_key)
   return game_login_key_.GetNoArena();
 }
-inline void LoginPmd_S2C::set_game_login_key(const ::std::string& value) {
+inline void LoginAccPmd_S2C::set_game_login_key(const ::std::string& value) {
   
   game_login_key_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:PlatPmd.LoginPmd_S2C.game_login_key)
+  // @@protoc_insertion_point(field_set:PlatPmd.LoginAccPmd_S2C.game_login_key)
 }
 #if LANG_CXX11
-inline void LoginPmd_S2C::set_game_login_key(::std::string&& value) {
+inline void LoginAccPmd_S2C::set_game_login_key(::std::string&& value) {
   
   game_login_key_.SetNoArena(
     &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginPmd_S2C.game_login_key)
+  // @@protoc_insertion_point(field_set_rvalue:PlatPmd.LoginAccPmd_S2C.game_login_key)
 }
 #endif
-inline void LoginPmd_S2C::set_game_login_key(const char* value) {
+inline void LoginAccPmd_S2C::set_game_login_key(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
   game_login_key_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginPmd_S2C.game_login_key)
+  // @@protoc_insertion_point(field_set_char:PlatPmd.LoginAccPmd_S2C.game_login_key)
 }
-inline void LoginPmd_S2C::set_game_login_key(const char* value, size_t size) {
+inline void LoginAccPmd_S2C::set_game_login_key(const char* value, size_t size) {
   
   game_login_key_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginPmd_S2C.game_login_key)
+  // @@protoc_insertion_point(field_set_pointer:PlatPmd.LoginAccPmd_S2C.game_login_key)
 }
-inline ::std::string* LoginPmd_S2C::mutable_game_login_key() {
+inline ::std::string* LoginAccPmd_S2C::mutable_game_login_key() {
   
-  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginPmd_S2C.game_login_key)
+  // @@protoc_insertion_point(field_mutable:PlatPmd.LoginAccPmd_S2C.game_login_key)
   return game_login_key_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline ::std::string* LoginPmd_S2C::release_game_login_key() {
-  // @@protoc_insertion_point(field_release:PlatPmd.LoginPmd_S2C.game_login_key)
+inline ::std::string* LoginAccPmd_S2C::release_game_login_key() {
+  // @@protoc_insertion_point(field_release:PlatPmd.LoginAccPmd_S2C.game_login_key)
   
   return game_login_key_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
 }
-inline void LoginPmd_S2C::set_allocated_game_login_key(::std::string* game_login_key) {
+inline void LoginAccPmd_S2C::set_allocated_game_login_key(::std::string* game_login_key) {
   if (game_login_key != NULL) {
     
   } else {
     
   }
   game_login_key_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), game_login_key);
-  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginPmd_S2C.game_login_key)
+  // @@protoc_insertion_point(field_set_allocated:PlatPmd.LoginAccPmd_S2C.game_login_key)
 }
 
 #ifdef __GNUC__

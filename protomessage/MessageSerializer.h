@@ -1,13 +1,14 @@
 #ifndef MESSAGESERIALIZER_H
 #define MESSAGESERIALIZER_H
-#pragma once
 
-#include "serverutils/common.h"
-#include <google/protobuf/descriptor.h>
+#include "common/utils/common.h"
 #include "common/proto/Pmd.pb.h"
-#include "common/proto/NullPmd.pb.h"
 #include "common/proto/AccPmd.pb.h"
+#include "common/proto/Error.pb.h"
+#include "common/proto/NullPmd.pb.h"
 #include "common/proto/PlayerPmd.pb.h"
+#include "common/proto/Types.pb.h"
+#include <google/protobuf/descriptor.h>
 
 class MessageSerializer
 {

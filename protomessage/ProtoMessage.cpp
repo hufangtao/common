@@ -1,6 +1,14 @@
 #include "ProtoMessage.h"
 
-ProtoMessage::ProtoMessage(/* args */) : body_length_(0), pmd_(0), param_(0) {}
+ProtoMessage::ProtoMessage() : body_length_(0), pmd_(0), param_(0)
+{
+}
+
+ProtoMessage::ProtoMessage(google::protobuf::Message &message) : body_length_(0), pmd_(0), param_(0)
+{
+    const google::protobuf::Descriptor *descriptor = message.GetDescriptor();
+    std::cout << "get Message" << descriptor->name() << std::endl;
+}
 
 ProtoMessage::~ProtoMessage() {}
 

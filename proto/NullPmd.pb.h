@@ -50,9 +50,9 @@ namespace PlatPmd {
 class NetPackageNullPmd_C2S;
 class NetPackageNullPmd_C2SDefaultTypeInternal;
 extern NetPackageNullPmd_C2SDefaultTypeInternal _NetPackageNullPmd_C2S_default_instance_;
-class NetTickNullPmd_SC;
-class NetTickNullPmd_SCDefaultTypeInternal;
-extern NetTickNullPmd_SCDefaultTypeInternal _NetTickNullPmd_SC_default_instance_;
+class NetTickNullPmd_S2C;
+class NetTickNullPmd_S2CDefaultTypeInternal;
+extern NetTickNullPmd_S2CDefaultTypeInternal _NetTickNullPmd_S2C_default_instance_;
 class NullPmd;
 class NullPmdDefaultTypeInternal;
 extern NullPmdDefaultTypeInternal _NullPmd_default_instance_;
@@ -60,7 +60,7 @@ extern NullPmdDefaultTypeInternal _NullPmd_default_instance_;
 namespace google {
 namespace protobuf {
 template<> ::PlatPmd::NetPackageNullPmd_C2S* Arena::CreateMaybeMessage<::PlatPmd::NetPackageNullPmd_C2S>(Arena*);
-template<> ::PlatPmd::NetTickNullPmd_SC* Arena::CreateMaybeMessage<::PlatPmd::NetTickNullPmd_SC>(Arena*);
+template<> ::PlatPmd::NetTickNullPmd_S2C* Arena::CreateMaybeMessage<::PlatPmd::NetTickNullPmd_S2C>(Arena*);
 template<> ::PlatPmd::NullPmd* Arena::CreateMaybeMessage<::PlatPmd::NullPmd>(Arena*);
 }  // namespace protobuf
 }  // namespace google
@@ -371,24 +371,24 @@ class NetPackageNullPmd_C2S : public ::google::protobuf::Message /* @@protoc_ins
 };
 // -------------------------------------------------------------------
 
-class NetTickNullPmd_SC : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:PlatPmd.NetTickNullPmd_SC) */ {
+class NetTickNullPmd_S2C : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:PlatPmd.NetTickNullPmd_S2C) */ {
  public:
-  NetTickNullPmd_SC();
-  virtual ~NetTickNullPmd_SC();
+  NetTickNullPmd_S2C();
+  virtual ~NetTickNullPmd_S2C();
 
-  NetTickNullPmd_SC(const NetTickNullPmd_SC& from);
+  NetTickNullPmd_S2C(const NetTickNullPmd_S2C& from);
 
-  inline NetTickNullPmd_SC& operator=(const NetTickNullPmd_SC& from) {
+  inline NetTickNullPmd_S2C& operator=(const NetTickNullPmd_S2C& from) {
     CopyFrom(from);
     return *this;
   }
   #if LANG_CXX11
-  NetTickNullPmd_SC(NetTickNullPmd_SC&& from) noexcept
-    : NetTickNullPmd_SC() {
+  NetTickNullPmd_S2C(NetTickNullPmd_S2C&& from) noexcept
+    : NetTickNullPmd_S2C() {
     *this = ::std::move(from);
   }
 
-  inline NetTickNullPmd_SC& operator=(NetTickNullPmd_SC&& from) noexcept {
+  inline NetTickNullPmd_S2C& operator=(NetTickNullPmd_S2C&& from) noexcept {
     if (GetArenaNoVirtual() == from.GetArenaNoVirtual()) {
       if (this != &from) InternalSwap(&from);
     } else {
@@ -398,34 +398,34 @@ class NetTickNullPmd_SC : public ::google::protobuf::Message /* @@protoc_inserti
   }
   #endif
   static const ::google::protobuf::Descriptor* descriptor();
-  static const NetTickNullPmd_SC& default_instance();
+  static const NetTickNullPmd_S2C& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
-  static inline const NetTickNullPmd_SC* internal_default_instance() {
-    return reinterpret_cast<const NetTickNullPmd_SC*>(
-               &_NetTickNullPmd_SC_default_instance_);
+  static inline const NetTickNullPmd_S2C* internal_default_instance() {
+    return reinterpret_cast<const NetTickNullPmd_S2C*>(
+               &_NetTickNullPmd_S2C_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     2;
 
-  void Swap(NetTickNullPmd_SC* other);
-  friend void swap(NetTickNullPmd_SC& a, NetTickNullPmd_SC& b) {
+  void Swap(NetTickNullPmd_S2C* other);
+  friend void swap(NetTickNullPmd_S2C& a, NetTickNullPmd_S2C& b) {
     a.Swap(&b);
   }
 
   // implements Message ----------------------------------------------
 
-  inline NetTickNullPmd_SC* New() const final {
-    return CreateMaybeMessage<NetTickNullPmd_SC>(NULL);
+  inline NetTickNullPmd_S2C* New() const final {
+    return CreateMaybeMessage<NetTickNullPmd_S2C>(NULL);
   }
 
-  NetTickNullPmd_SC* New(::google::protobuf::Arena* arena) const final {
-    return CreateMaybeMessage<NetTickNullPmd_SC>(arena);
+  NetTickNullPmd_S2C* New(::google::protobuf::Arena* arena) const final {
+    return CreateMaybeMessage<NetTickNullPmd_S2C>(arena);
   }
   void CopyFrom(const ::google::protobuf::Message& from) final;
   void MergeFrom(const ::google::protobuf::Message& from) final;
-  void CopyFrom(const NetTickNullPmd_SC& from);
-  void MergeFrom(const NetTickNullPmd_SC& from);
+  void CopyFrom(const NetTickNullPmd_S2C& from);
+  void MergeFrom(const NetTickNullPmd_S2C& from);
   void Clear() final;
   bool IsInitialized() const final;
 
@@ -442,7 +442,7 @@ class NetTickNullPmd_SC : public ::google::protobuf::Message /* @@protoc_inserti
   void SharedCtor();
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(NetTickNullPmd_SC* other);
+  void InternalSwap(NetTickNullPmd_S2C* other);
   private:
   inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
@@ -470,7 +470,7 @@ class NetTickNullPmd_SC : public ::google::protobuf::Message /* @@protoc_inserti
   ::google::protobuf::int32 mytime() const;
   void set_mytime(::google::protobuf::int32 value);
 
-  // @@protoc_insertion_point(class_scope:PlatPmd.NetTickNullPmd_SC)
+  // @@protoc_insertion_point(class_scope:PlatPmd.NetTickNullPmd_S2C)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
@@ -647,34 +647,34 @@ inline void NetPackageNullPmd_C2S::set_time(::google::protobuf::int32 value) {
 
 // -------------------------------------------------------------------
 
-// NetTickNullPmd_SC
+// NetTickNullPmd_S2C
 
 // int32 requesttime = 1;
-inline void NetTickNullPmd_SC::clear_requesttime() {
+inline void NetTickNullPmd_S2C::clear_requesttime() {
   requesttime_ = 0;
 }
-inline ::google::protobuf::int32 NetTickNullPmd_SC::requesttime() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.NetTickNullPmd_SC.requesttime)
+inline ::google::protobuf::int32 NetTickNullPmd_S2C::requesttime() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.NetTickNullPmd_S2C.requesttime)
   return requesttime_;
 }
-inline void NetTickNullPmd_SC::set_requesttime(::google::protobuf::int32 value) {
+inline void NetTickNullPmd_S2C::set_requesttime(::google::protobuf::int32 value) {
   
   requesttime_ = value;
-  // @@protoc_insertion_point(field_set:PlatPmd.NetTickNullPmd_SC.requesttime)
+  // @@protoc_insertion_point(field_set:PlatPmd.NetTickNullPmd_S2C.requesttime)
 }
 
 // int32 mytime = 2;
-inline void NetTickNullPmd_SC::clear_mytime() {
+inline void NetTickNullPmd_S2C::clear_mytime() {
   mytime_ = 0;
 }
-inline ::google::protobuf::int32 NetTickNullPmd_SC::mytime() const {
-  // @@protoc_insertion_point(field_get:PlatPmd.NetTickNullPmd_SC.mytime)
+inline ::google::protobuf::int32 NetTickNullPmd_S2C::mytime() const {
+  // @@protoc_insertion_point(field_get:PlatPmd.NetTickNullPmd_S2C.mytime)
   return mytime_;
 }
-inline void NetTickNullPmd_SC::set_mytime(::google::protobuf::int32 value) {
+inline void NetTickNullPmd_S2C::set_mytime(::google::protobuf::int32 value) {
   
   mytime_ = value;
-  // @@protoc_insertion_point(field_set:PlatPmd.NetTickNullPmd_SC.mytime)
+  // @@protoc_insertion_point(field_set:PlatPmd.NetTickNullPmd_S2C.mytime)
 }
 
 #ifdef __GNUC__

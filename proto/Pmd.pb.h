@@ -52,22 +52,12 @@ enum PlatCommand {
   PlatCommand_NullPmd = 0,
   PlatCommand_AccPmd = 1,
   PlatCommand_PlayerPmd = 2,
-  PlatCommand_RoomPmd = 3,
-  PlatCommand_ActivityPmd = 4,
-  PlatCommand_ChatPmd = 5,
-  PlatCommand_GoodsPmd = 6,
-  PlatCommand_TaskPmd = 7,
-  PlatCommand_AwardPmd = 8,
-  PlatCommand_PaymentPmd = 9,
-  PlatCommand_RankPmd = 10,
-  PlatCommand_PlayPmd = 11,
-  PlatCommand_SignInPmd = 12,
   PlatCommand_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
   PlatCommand_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
 };
 bool PlatCommand_IsValid(int value);
 const PlatCommand PlatCommand_MIN = PlatCommand_NullPmd;
-const PlatCommand PlatCommand_MAX = PlatCommand_SignInPmd;
+const PlatCommand PlatCommand_MAX = PlatCommand_PlayerPmd;
 const int PlatCommand_ARRAYSIZE = PlatCommand_MAX + 1;
 
 const ::google::protobuf::EnumDescriptor* PlatCommand_descriptor();

@@ -12,6 +12,13 @@ const google::protobuf::Message *MessageSerializer::getMessageByCmdParam(unsigne
     return m_unserializeTable[uMsgID];
 }
 
+void MessageSerializer::getCmdParamByDescriptor(const google::protobuf::Descriptor *descriptor, unsigned char &byCmd, unsigned char &byParam)
+{
+    int index = protoMap[descriptor->name().c_str()];
+    INFO("get CmdParam ----", index);
+    byParam = index | (0 << 8);
+    byCmd = (index >> 8) | (0 << 8);
+}
 
 bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEnum, const std::string ns)
 {
@@ -54,7 +61,7 @@ bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEn
             const google::protobuf::Descriptor *message = google::protobuf::DescriptorPool::generated_pool()->FindMessageTypeByName(ns + "." + paramItem->name());
             if (NULL == message)
             {
-                ERROR("MessageSerializer::Register find err:[", c, ", ", t, "]  ", byParamEnum->full_name().c_str(),", ", (ns + "." + paramItem->name()).c_str());
+                ERROR("MessageSerializer::Register find err:[", c, ", ", t, "]  ", byParamEnum->full_name().c_str(), ", ", (ns + "." + paramItem->name()).c_str());
                 return false;
             }
 
@@ -78,11 +85,12 @@ bool MessageSerializer::Register(unsigned char byCmd, unsigned char byParam, con
     const google::protobuf::Message *prototype = google::protobuf::MessageFactory::generated_factory()->GetPrototype(typeDescriptor);
     if (m_unserializeTable[(byCmd << 8) + byParam] != NULL && m_unserializeTable[(byCmd << 8) + byParam] != prototype)
     {
-        ERROR("MessageSerializer::Register insert err:", "[",byCmd,"]", byParam, m_unserializeTable[(byCmd << 8) + byParam], prototype);
+        ERROR("MessageSerializer::Register insert err:", "[", byCmd, "]", byParam, m_unserializeTable[(byCmd << 8) + byParam], prototype);
         return false;
     }
     m_unserializeTable[(byCmd << 8) + byParam] = prototype;
-
+    protoMap[typeDescriptor->name().c_str()] = (byCmd << 8) + byParam;
+    INFO("set Cmd Param ----:", typeDescriptor->name().c_str(), ":->", static_cast<int>((byCmd << 8) + byParam));
     return true;
 }
 

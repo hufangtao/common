@@ -7,7 +7,13 @@ ProtoMessage::ProtoMessage() : body_length_(0), pmd_(0), param_(0)
 ProtoMessage::ProtoMessage(google::protobuf::Message &message) : body_length_(0), pmd_(0), param_(0)
 {
     const google::protobuf::Descriptor *descriptor = message.GetDescriptor();
-    std::cout << "get Message" << descriptor->name() << std::endl;
+    std::cout << "send Message " << descriptor->name() << std::endl;
+    ProtoUtils::msgDecode->getCmdParamByDescriptor(descriptor, pmd_, param_);
+    INFO("Message decode Cmd", static_cast<int>(pmd_), " : Param", static_cast<int>(param_));
+    int msgSize = message.ByteSizeLong();
+    body_length(msgSize);
+    message.SerializeToArray(body(), body_length());
+    encode_header();
 }
 
 ProtoMessage::~ProtoMessage() {}
@@ -63,13 +69,8 @@ bool ProtoMessage::decode_header()
     std::strncat(header, data_, HEADER_LENGTH);
     body_length_ = std::atoi(header);
 
-    char pmdHeader[PMD_LENGTH + 1] = "";
-    std::strncat(pmdHeader, data_ + HEADER_LENGTH, PMD_LENGTH);
-    pmd_ = std::atoi(pmdHeader);
-
-    char paramHeader[PARAM_LENGTH + 1] = "";
-    std::strncat(paramHeader, data_ + HEADER_LENGTH + PMD_LENGTH, PARAM_LENGTH);
-    param_ = std::atoi(paramHeader);
+    pmd_ = data_[HEADER_LENGTH];
+    param_ = data_[HEADER_LENGTH+1];
 
     if (body_length_ > MAX_BODY_LENGTH)
     {
@@ -83,4 +84,6 @@ void ProtoMessage::encode_header()
     char header[HEADER_LENGTH + 1] = "";
     std::sprintf(header, "%4d", static_cast<int>(body_length_ + PMD_LENGTH + PARAM_LENGTH));
     std::memcpy(data_, header, HEADER_LENGTH);
+    data_[HEADER_LENGTH] = pmd_;
+    data_[HEADER_LENGTH + 1] = param_;
 }

@@ -8,7 +8,10 @@
 #include "common/proto/NullPmd.pb.h"
 #include "common/proto/PlayerPmd.pb.h"
 #include "common/proto/Types.pb.h"
+
 #include <google/protobuf/descriptor.h>
+
+#include <map>
 
 class MessageSerializer
 {
@@ -18,6 +21,7 @@ class MessageSerializer
   private:
     // 保存所有协议结构对象
     const google::protobuf::Message *m_unserializeTable[65536];
+    std::map<std::string, int> protoMap;
 
   public:
     /** 注册proto协议
@@ -37,6 +41,12 @@ class MessageSerializer
      * @return google::protobuf::Message.
     */
     const google::protobuf::Message* getMessageByCmdParam(unsigned char byCmd, unsigned char byParam);
+
+    /** 通过Message获取主、子协议号
+     * @param byCmd 主协议号 byParam 子协议号 descriptor 协议的描述
+     * @return byCmd 主协议号 byParam 子协议号 
+    */
+    void getCmdParamByDescriptor(const google::protobuf::Descriptor *descriptor, unsigned char &buCmd, unsigned char &byParam);
 
 };
 

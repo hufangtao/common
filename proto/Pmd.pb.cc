@@ -50,19 +50,12 @@ void protobuf_RegisterTypes(const ::std::string&) {
 void AddDescriptorsImpl() {
   InitDefaults();
   static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\tPmd.proto\022\007PlatPmd*\336\002\n\013PlatCommand\022\027\n\023"
-      "PlatCommand_NullPmd\020\000\022\026\n\022PlatCommand_Acc"
-      "Pmd\020\001\022\031\n\025PlatCommand_PlayerPmd\020\002\022\027\n\023Plat"
-      "Command_RoomPmd\020\003\022\033\n\027PlatCommand_Activit"
-      "yPmd\020\004\022\027\n\023PlatCommand_ChatPmd\020\005\022\030\n\024PlatC"
-      "ommand_GoodsPmd\020\006\022\027\n\023PlatCommand_TaskPmd"
-      "\020\007\022\030\n\024PlatCommand_AwardPmd\020\010\022\032\n\026PlatComm"
-      "and_PaymentPmd\020\t\022\027\n\023PlatCommand_RankPmd\020"
-      "\n\022\027\n\023PlatCommand_PlayPmd\020\013\022\031\n\025PlatComman"
-      "d_SignInPmd\020\014b\006proto3"
+      "\n\tPmd.proto\022\007PlatPmd*Y\n\013PlatCommand\022\027\n\023P"
+      "latCommand_NullPmd\020\000\022\026\n\022PlatCommand_AccP"
+      "md\020\001\022\031\n\025PlatCommand_PlayerPmd\020\002b\006proto3"
   };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 381);
+      descriptor, 119);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "Pmd.proto", &protobuf_RegisterTypes);
 }
@@ -88,16 +81,6 @@ bool PlatCommand_IsValid(int value) {
     case 0:
     case 1:
     case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-    case 7:
-    case 8:
-    case 9:
-    case 10:
-    case 11:
-    case 12:
       return true;
     default:
       return false;

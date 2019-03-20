@@ -72,6 +72,10 @@ bool ProtoMessage::decode_header()
     pmd_ = data_[HEADER_LENGTH];
     param_ = data_[HEADER_LENGTH+1];
 
+    std::cout<<"pmd_:"<<(int)pmd_<<std::endl;
+    std::cout<<"param_:"<<(int)param_<<std::endl;
+    std::cout<<"body_length_:"<<body_length_<<std::endl;
+
     if (body_length_ > MAX_BODY_LENGTH)
     {
         body_length_ = 0;

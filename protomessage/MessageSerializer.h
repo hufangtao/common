@@ -47,7 +47,7 @@ class MessageSerializer
      * @return byCmd 主协议号 byParam 子协议号 
     */
     void getCmdParamByDescriptor(const google::protobuf::Descriptor *descriptor, unsigned char &buCmd, unsigned char &byParam);
-
+    void getCmdParamByMessageName(const std::string messageName, int &byCmd, int &byParam);
 };
 
 void initParamDescriptor();

@@ -20,6 +20,14 @@ void MessageSerializer::getCmdParamByDescriptor(const google::protobuf::Descript
     byCmd = (index >> 8) | (0 << 8);
 }
 
+void MessageSerializer::getCmdParamByMessageName(const std::string messageName, int &byCmd, int &byParam)
+{
+    int index = protoMap[messageName];
+    INFO("get CmdParam ----", index);
+    byParam = index | (0 << 8);
+    byCmd = (index >> 8) | (0 << 8);
+}
+
 bool MessageSerializer::Register(const google::protobuf::EnumDescriptor *byCmdEnum, const std::string ns)
 {
     if (byCmdEnum == NULL)
@@ -89,7 +97,7 @@ bool MessageSerializer::Register(unsigned char byCmd, unsigned char byParam, con
         return false;
     }
     m_unserializeTable[(byCmd << 8) + byParam] = prototype;
-    protoMap[typeDescriptor->name().c_str()] = (byCmd << 8) + byParam;
+    protoMap[typeDescriptor->name().c_str()] = static_cast<int>((byCmd << 8) + byParam);
     INFO("set Cmd Param ----:", typeDescriptor->name().c_str(), ":->", static_cast<int>((byCmd << 8) + byParam));
     return true;
 }
